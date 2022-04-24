@@ -35,7 +35,6 @@ export default function Navbar() {
                   About
                   </Text>
                 </Link>
-          
                 <Link style={{ textDecoration: 'none' }} to="/about">
                   <Text color='#fc9c54' fontSize='18px' fontWeight='bold' paddingRight='50px'>
                   Contact Us
