@@ -8,7 +8,6 @@ softShadows();
 
 const CoinModelLayout = () => {
   return (
-   
       <div style={{
         display: "flex",
         width: "50vw",

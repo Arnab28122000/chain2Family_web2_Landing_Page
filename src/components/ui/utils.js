@@ -24,6 +24,7 @@ const Row = styled.div`
   position: ${(props) => props.position};
   max-width: ${(props) => props.maxWidth};
   max-height: ${(props) => props.maxHeight};
+  id: ${(props) => props.id};
   background-image: ${(props) => props.backgroundImage};
   &:hover {
     cursor: ${(props) => props.cursor};
@@ -31,6 +32,7 @@ const Row = styled.div`
 `;
 
 const Column = styled.div`
+  id: ${(props) => props.id};
   display: flex;
   flex-direction: column;
   background-image: ${(props) => props.backgroundImage};
@@ -46,7 +48,7 @@ const Column = styled.div`
   padding-bottom: ${(props) => props.paddingBottom};
   margin: ${(props) => props.margin};
   margin-left: ${(props) => props.marginLeft};
-  margin-right: ${(props) => props.marginRight};  
+  margin-right: ${(props) => props.marginRight};
   max-width: ${(props) => props.maxWidth};
   max-height: ${(props) => props.maxHeight};
   margin-top: ${(props) => props.marginTop};
@@ -61,7 +63,8 @@ const Column = styled.div`
 `;
 
 const Container = styled.div`
-background-image: ${(props) => props.backgroundImage};
+  id: ${(props) => props.id};
+  background-image: ${(props) => props.backgroundImage};
   z-index: ${(props) => props.zIndex};
   padding-top: ${(props) => props.paddingTop};
   padding-bottom: ${(props) => props.paddingBottom};
@@ -89,6 +92,7 @@ background-image: ${(props) => props.backgroundImage};
 `;
 
 const Text = styled.div`
+  id: ${(props) => props.id};
   z-index: ${(props) => props.zIndex};
   display: flex;
   flex-direction: column;
@@ -125,4 +129,4 @@ const Text = styled.div`
   }
 `;
 
-export {Row, Column, Container, Text};
+export { Row, Column, Container, Text };

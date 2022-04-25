@@ -3,19 +3,49 @@ import Logo from "../images/chain2Logo_sunset.png"
 import TextLogo from "../images/c2f_text_logo.png"
 import { Row, Text, Container } from './ui/utils';
 import styled from "styled-components";
-import { hover } from '@testing-library/user-event/dist/hover';
-
+import { HashLink } from 'react-router-hash-link';
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
 
+    const [show, setShow] = useState(true)
+    const [maxY, setMaxY] = useState(100)
+    const controlNavbar = () => {
+        console.log("Y", window.scrollY)
+        
+        if(window.scrollY > maxY){
+            console.log("Greater")
+            setMaxY(window.scrollY)
+        }
+        console.log("maxY", maxY)
+        if (window.scrollY > 100) {
+            setShow(false)
+        } 
+        // else if(window.scrollY < maxY-50){
+        //     setShow(true)
+        //     setMaxY(window.scrollY)
+        // }
+        else {
+            setShow(true)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', controlNavbar)
+        return () => {
+            window.removeEventListener('scroll', controlNavbar)
+        }
+    }, [])
+
     return (
-        <Wrapper>
+        <Wrapper active={show}>
         <Row 
         maxWidth="100vw"background="transparent"
         justify="space-between" align="center"
          >
-        <Link 
-        to="/" 
+        <HashLink 
+        smooth
+        to="/#home" 
         style={{
              textDecoration: 'none'
              }}>
@@ -27,14 +57,18 @@ export default function Navbar() {
             <img src={TextLogo} height="45px" width="auto" alt="logo"/>
             </Container>
             </Row>
-        </Link>  
+        </HashLink>  
         <Row>
         
-              <Link style={{ textDecoration: 'none' }} to="/about">
+              <HashLink
+              style={{ textDecoration: 'none' }} 
+              smooth
+              to="/#about"
+              >
                   <Text color='#fc9c54' fontSize='18px' fontWeight='bold' paddingRight='20px'>
                   About
                   </Text>
-                </Link>
+                </HashLink>
                 <Link style={{ textDecoration: 'none' }} to="/about">
                   <Text color='#fc9c54' fontSize='18px' fontWeight='bold' paddingRight='50px'>
                   Contact Us
@@ -47,7 +81,8 @@ export default function Navbar() {
 }
 
 const Wrapper = styled.div`
-  position: relative;
+  position: sticky;
+  top:0;
   max-width: 100vw;
   width: 100%;
   max-height: 50px;
@@ -56,4 +91,7 @@ const Wrapper = styled.div`
   text-align: center;
   margin: 0 auto;
   padding: 0px 0px 0px;
+  transition-timing-function: ${(props) => props.active ? 'ease-in': ''} ;
+    transition:${(props) => props.active ? '0.5s': ''} ;
+    display: ${(props) => props.active ? 'block': 'none'} ;
 `;

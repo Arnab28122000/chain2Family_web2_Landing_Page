@@ -3,7 +3,7 @@ import { Row, Text } from "./ui/utils";
 
 export default function CoinScreen() {
     return (
-      <Row maxWidth="100vw" height="500px" 
+      <Row maxWidth="100vw" height="500px" id="about"
     //   backgroundColor="#1f1144" 
       backgroundImage="linear-gradient(#1f1144,#1f1144, #57BEF8)" 
       justify="space-between" align="center" paddingTop="400px">
