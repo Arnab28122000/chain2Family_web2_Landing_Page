@@ -1,6 +1,5 @@
 import {Link} from 'react-router-dom';
 import Logo from "../images/chain2Logo_sunset.png"
-import TextLogo from "../images/c2f_text_logo.png"
 import { Row, Text, Container } from './ui/utils';
 import styled from "styled-components";
 import { HashLink } from 'react-router-hash-link';
@@ -54,7 +53,6 @@ export default function Navbar() {
             paddingLeft='70px' paddingTop='30px'>
             <img src={Logo} height="70px" width="auto" alt="logo"/>
             <Container paddingTop='15px' paddingLeft='10px'>
-            <img src={TextLogo} height="45px" width="auto" alt="logo"/>
             </Container>
             </Row>
         </HashLink>  

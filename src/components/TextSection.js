@@ -2,7 +2,6 @@
 import styled from "styled-components";
 import { useState, useEffect } from "react";
 
-import c2FHouse from "../images/C2F_HOUSE.png";
 import { Wave} from 'react-animated-text';
 
 export default function TextSection() {
@@ -68,7 +67,6 @@ const Description = styled.p`
 const Wave1 = styled.div`
   height: 330px;
   width: 100%;
-  background-image: url(${c2FHouse});
   background-size: 100%;
   background-repeat: no-repeat;
 `;
