@@ -1,6 +1,5 @@
 import { Row,Column, Container, Text } from "./ui/utils";
 import styled from "styled-components";
-import pos from "../images/pos_model.png";
 
 export default function POSScreen() {
   return (
@@ -40,7 +39,6 @@ const POSImage = styled.div`
   width: 60vw;
   margin-left: 50px;
   margin-right: 50px;
-  background-image: url(${pos});
   background-size: 100%;
   background-repeat: no-repeat;
 `;
