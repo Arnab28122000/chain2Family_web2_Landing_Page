@@ -19,7 +19,7 @@ export default function TextSection() {
     <Wave1/>
     <Title>
     <Wave
-      text="Chain2Family"
+      text=""
       iterations={1}
       effect="jump"
       effectDuration={1}
@@ -28,7 +28,7 @@ export default function TextSection() {
     <Description>
     <Wave
     iterations={1}
-    text="We are PIONEERS building and branching the gap between TradFi, CeFi and DeFi" 
+    text="" 
     effect="stretch" 
     effectDuration={0.1} />
     </Description>

@@ -2,7 +2,6 @@ import {Link} from 'react-router-dom';
 import Logo from "../images/chain2Logo_sunset.png"
 import { Row, Text, Container } from './ui/utils';
 import styled from "styled-components";
-import { hover } from '@testing-library/user-event/dist/hover';
 
 
 export default function Navbar() {
@@ -19,7 +18,7 @@ export default function Navbar() {
              textDecoration: 'none'
              }}>
             <Row 
-            justify="space-between" align="center"
+            justify="" align="center"
             paddingLeft='70px' paddingTop='30px'>
             <img src={Logo} height="70px" width="auto" alt="logo"/>
             <Container paddingTop='15px' paddingLeft='10px'>
@@ -29,13 +28,13 @@ export default function Navbar() {
         <Row>
         
               <Link style={{ textDecoration: 'none' }} to="/about">
-                  <Text color='#fc9c54' fontSize='18px' fontWeight='bold' paddingRight='20px'>
+                  <Text color='#ffffff' fontSize='18px' fontWeight='bold' paddingRight='20px'>
                   About
                   </Text>
                 </Link>
           
                 <Link style={{ textDecoration: 'none' }} to="/about">
-                  <Text color='#fc9c54' fontSize='18px' fontWeight='bold' paddingRight='50px'>
+                  <Text color='#ffffff' fontSize='18px' fontWeight='bold' paddingRight='50px'>
                   Contact Us
                   </Text>
                 </Link>
@@ -47,12 +46,11 @@ export default function Navbar() {
 
 const Wrapper = styled.div`
   position: relative;
-  max-width: 100vw;
-  width: 100%;
-  max-height: 50px;
+  max-width: 35vw;
+  max-height: 1000px;
   display: grid;
   gap: 0px;
   text-align: center;
   margin: 0 auto;
-  padding: 0px 0px 0px;
+  padding: 30px 0px 0px;
 `;
