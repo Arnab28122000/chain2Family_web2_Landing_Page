@@ -24,18 +24,18 @@ export default function HeroBackground() {
     <Wrapper>
       <Wave1 style={{ transform: `translateY(-${offsetY * 0.1}px)` }}/>
       <Wave2 style={{ transform: `translateY(-${offsetY * 0.2}px)` }}/>
-      <Wave3 style={{ transform: `translateY(-${offsetY * 0.4}px)` }}/>
-      <Wave4 style={{ transform: `translateY(-${offsetY * 0.5}px)` }}/>
-      <Wave5 style={{ transform: `translateY(-${offsetY * 0.6}px)` }}/>
-      <Wave6 style={{ transform: `translateY(-${offsetY * 0.6}px)` }}/>
-      <Wave7/>
+      <Wave3 style={{ transform: `translateY(-${offsetY * 0.3}px)` }}/>
+      <Wave4 style={{ transform: `translateY(-${offsetY * 0.1}px)` }}/>
+      <Wave5 style={{ transform: `translateY(-${offsetY * 0.15}px)` }}/>
+      <Wave6 style={{ transform: `translateY(-${offsetY * 0.2}px)` }}/>
+      {/* <Wave7/> */}
     </Wrapper>
   );
 }
 const Wrapper = styled.div`
   position: absolute;
   width: 100%;
-  height: 1000px;
+  height: 1300px;
   background: linear-gradient(180deg, #08183A 6.33%, #4B3D60 15%, #FC9C54 30%, #ffffff 39.13%);
   text-align: center;
   overflow: hidden;
@@ -56,38 +56,38 @@ const Layer = styled.div`
 
 const Wave1 = styled(Layer)`
 
-  top: 190px;
+  top: 150px;
   height: 446px;
   background-image: url(${mountain1});
 `;
 
 const Wave2 = styled(Layer)`
 
-  top: 190px;
+  top: 250px;
   height: 446px;
   background-image: url(${mountain2});
 `;
 
 const Wave3 = styled(Layer)`
-  top: 160px;
+  top: 350px;
   height: 464px;
   background-image: url(${mountain3});
 `;
 
 const Wave4 = styled(Layer)`
-  top: 347px;
+  top: 450px;
   height: 408px;
   background-image: url(${layer4});
 `;
 
 const Wave5 = styled(Layer)`
-  top: 466px;
+  top: 600px;
   height: 457px;
   background-image: url(${layer5});
 `;
 
 const Wave6 = styled(Layer)`
-  top: 450px;
+  top: 800px;
   height: 867px;
   background-image: url(${layer6});
 `;

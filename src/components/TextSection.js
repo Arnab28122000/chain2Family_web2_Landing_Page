@@ -1,6 +1,7 @@
 
 import styled from "styled-components";
 import { useState, useEffect } from "react";
+import CoinModelLayout from "./Coin-Model-Layout";
 
 import { Wave} from 'react-animated-text';
 
@@ -16,7 +17,8 @@ export default function TextSection() {
  
   return (
     <Wrapper style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
-    <Wave1/>
+    {/* <Wave1/> */}
+    {/* <CoinModelLayout/> */}
     <Title>
     <Wave
       text="Chain2Family"
@@ -24,6 +26,7 @@ export default function TextSection() {
       effect="jump"
       effectDuration={1}
     />
+    
     </Title>
     <Description>
     <Wave

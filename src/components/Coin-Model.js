@@ -14,7 +14,7 @@ export default function Model({ position, color, speed, args , ...props }) {
 
   //useFrame allows us to re-render/update rotation on each frame
   useFrame(() => {
-    mesh.current.rotation.y = mesh.current.rotation.y += 0.02
+    mesh.current.rotation.y = mesh.current.rotation.y += 0.01
     // mesh.current.rotation.x = mesh.current.rotation.x += 0.02
   });
 
@@ -37,7 +37,7 @@ export default function Model({ position, color, speed, args , ...props }) {
       position={position}
       ref={mesh}
       onClick={() => setExpand(!expand)}
-      scale={3.5}
+      scale={2}
       castShadow
       geometry={nodes.Cylinder.geometry} material={materials['Material.001']} />
       
