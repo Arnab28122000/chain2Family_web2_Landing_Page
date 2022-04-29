@@ -8,11 +8,12 @@ import mountain3 from "../images/mountain3.svg";
 import layer4 from "../images/layer4.svg";
 import layer5 from "../images/layer5.svg";
 import layer6 from "../images/layer6.svg";
-import heroWave from "../images/hero-wave.svg";
+import { ParticlesContainer } from "./Particles";
 
 export default function HeroBackground() {
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
+
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -22,21 +23,28 @@ export default function HeroBackground() {
   
   return (
     <Wrapper>
-      <Wave1 style={{ transform: `translateY(-${offsetY * 0.1}px)` }}/>
-      <Wave2 style={{ transform: `translateY(-${offsetY * 0.2}px)` }}/>
-      <Wave3 style={{ transform: `translateY(-${offsetY * 0.3}px)` }}/>
-      <Wave4 style={{ transform: `translateY(-${offsetY * 0.1}px)` }}/>
-      <Wave5 style={{ transform: `translateY(-${offsetY * 0.15}px)` }}/>
-      <Wave6 style={{ transform: `translateY(-${offsetY * 0.2}px)` }}/>
-      {/* <Wave7/> */}
+      <div style={{
+        height: '500px'
+      }}>
+      <ParticlesContainer/>
+      </div>
+      <Wave1 style={{ transform: `translateY(-${offsetY * 0.05}px)` }}/>
+      <Wave2 style={{ transform: `translateY(-${offsetY * 0.1}px)` }}/>
+      <Wave3 style={{ transform: `translateY(-${offsetY * 0.15}px)` }}/>
+      <Wave4 style={{ transform: `translateY(-${offsetY * 0.2}px)` }}/>
+      <Wave5 style={{ transform: `translateY(-${offsetY * 0.25}px)` }}/>
+      <Wave6 style={{ transform: `translateY(-${offsetY * 0.25}px)` }}/>
+      <Wave7/>
     </Wrapper>
   );
 }
 const Wrapper = styled.div`
   position: absolute;
   width: 100%;
-  height: 1300px;
-  background: linear-gradient(180deg, #08183A 6.33%, #4B3D60 15%, #FC9C54 30%, #ffffff 39.13%);
+  height: 1000px;
+  background: linear-gradient(180deg, #08183A 4.33%, #4B3D60 18%, #FC9C54 50%, #ffffff 100.13%);
+  background-repeat: no-repeat;
+  background-size: 100%;
   text-align: center;
   overflow: hidden;
   padding: 0px;
@@ -56,20 +64,20 @@ const Layer = styled.div`
 
 const Wave1 = styled(Layer)`
 
-  top: 150px;
+  top: 240px;
   height: 446px;
   background-image: url(${mountain1});
 `;
 
 const Wave2 = styled(Layer)`
 
-  top: 250px;
+  top: 310px;
   height: 446px;
   background-image: url(${mountain2});
 `;
 
 const Wave3 = styled(Layer)`
-  top: 350px;
+  top: 430px;
   height: 464px;
   background-image: url(${mountain3});
 `;
@@ -81,19 +89,22 @@ const Wave4 = styled(Layer)`
 `;
 
 const Wave5 = styled(Layer)`
-  top: 600px;
+  top: 670px;
   height: 457px;
   background-image: url(${layer5});
 `;
 
 const Wave6 = styled(Layer)`
-  top: 800px;
+  top: 840px;
   height: 867px;
   background-image: url(${layer6});
 `;
 
 const Wave7 = styled(Layer)`
-  top: 700px;
-  height: 630px;
-  background-image: url(${heroWave});
+  top: 870px;
+  width: 100vw;
+  height: 200px;
+  background-color: #08183A;
+  //background-image: linear-gradient(rgba(8, 24, 58, 0.95), #08183A);
 `;
+

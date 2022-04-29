@@ -15,7 +15,6 @@ export default function HomePage() {
     <Wrapper>
       <Background />
       <Navbar/>
-      <TextSection />
     </Wrapper>
     <CoinScreen/>
     <POSScreen/>

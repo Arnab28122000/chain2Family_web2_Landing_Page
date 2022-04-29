@@ -10,12 +10,10 @@ const CoinModelLayout = () => {
   return (
       <div style={{
         display: "flex",
-        width: "50vw",
-        height: "80vh",
+        width: "200px",
+        height: "170px",
       }}>
       <Canvas
-        colorManagement
-        shadowMap
         camera={{ position: [-5, 2, 10], fov: 60 }}
        >
         
@@ -37,12 +35,12 @@ const CoinModelLayout = () => {
         <pointLight position={[-10, 0, -20]} intensity={0.5} />
         <pointLight position={[0, -10, 0]} intensity={1.5} />
       <Model
-      position={[0, 1, 0]}
+      position={[0, 1.3, 0]}
       color='lightblue'
       args={[3, 2, 1]}
       speed={2}
       />
-      <OrbitControls/>
+      {/* <OrbitControls/> */}
       </Canvas>
         </div>
   );

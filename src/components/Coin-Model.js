@@ -27,6 +27,7 @@ export default function Model({ position, color, speed, args , ...props }) {
     <group>
     <mesh
             rotation={[-Math.PI / 1.6, -1.6, -1.8]}
+            // rotation={[-Math.PI / 1.6, -1.6, -1.8]}
             position={[0, -2, 0]}
             receiveShadow
             >
@@ -37,7 +38,7 @@ export default function Model({ position, color, speed, args , ...props }) {
       position={position}
       ref={mesh}
       onClick={() => setExpand(!expand)}
-      scale={2}
+      scale={4}
       castShadow
       geometry={nodes.Cylinder.geometry} material={materials['Material.001']} />
       

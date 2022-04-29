@@ -16,12 +16,10 @@ export default function TextSection() {
   }, []);
  
   return (
-    <Wrapper style={{ transform: `translateY(${offsetY * 0.2}px)` }}>
-    {/* <Wave1/> */}
-    {/* <CoinModelLayout/> */}
+    <Wrapper style={{ transform: `translateY(${offsetY * 1}px)` }}>
     <Title>
     <Wave
-      text="Chain2Family"
+      text=""
       iterations={1}
       effect="jump"
       effectDuration={1}
@@ -31,7 +29,7 @@ export default function TextSection() {
     <Description>
     <Wave
     iterations={1}
-    text="We are PIONEERS building and branching the gap between TradFi, CeFi and DeFi" 
+    text="" 
     effect="stretch" 
     effectDuration={0.1} />
     </Description>
