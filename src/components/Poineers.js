@@ -2,11 +2,11 @@ import { Row, Column, Text } from "./ui/utils";
 import { useState } from "react";
 import styled from "styled-components";
 import arnab from "../images/arnab.jpeg";
-import keaton from "../images/Keaton.png";
-import shawn from "../images/Shawn.png";
-import sebastian from "../images/Sebastian.png";
-import amit from "../images/Amit.png";
-import brayden from "../images/Brayden.png";
+import keaton from "../images/Keaton.jpg";
+import shawn from "../images/Shawn.jpg";
+import sebastian from "../images/Sebastian.jpg";
+import amit from "../images/Amit.jpg";
+import brayden from "../images/Brayden.jpg";
 
 export default function Pioneers() {
   
@@ -20,14 +20,14 @@ export default function Pioneers() {
       backgroundColor="#08183A"
     >
       <Row maxWidth='80vw' width='100%' justify="space-between" marginLeft='190px' marginRight='190px'>
-       <PioneerInfo image={keaton} name='Keaton McCune' title='CEO - CTO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
-       <PioneerInfo image={shawn} name='Shawn Saucier' title='CFO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
-       <PioneerInfo image={sebastian} name='Sebastian Garcia' title='COO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+       <PioneerInfo url='https://www.linkedin.com/in/k3ytoshi/' image={keaton} name='Keaton McCune' title='CEO - CTO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+       <PioneerInfo url='https://www.linkedin.com/in/shawn-saucier/' image={shawn} name='Shawn Saucier' title='CFO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+       <PioneerInfo url='https://www.linkedin.com/in/sebasgarciax/' image={sebastian} name='Sebastian Garcia' title='COO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
       </Row>
       <Row maxWidth='80vw' width='100%'  justify="space-between" marginLeft='190px' marginRight='190px'>
-       <PioneerInfo image={arnab} name='Arnab Bhattacharya' title='Lead Developer' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
-       <PioneerInfo image={amit} name='Dr. Amit' title='Lead Architect' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
-       <PioneerInfo image={brayden} name='Brayden Salmins' title='Managing Director' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+       <PioneerInfo url='https://www.linkedin.com/in/arnab-bhattacharya-ab7055189/' image={arnab} name='Arnab Bhattacharya' title='Lead Developer' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+       <PioneerInfo url='https://www.linkedin.com/in/dr-amit-vishwakarma-0a4b79bb/' image={amit} name='Dr. Amit' title='Lead Architect' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+       <PioneerInfo url='https://www.linkedin.com/in/braydensalmins/' image={brayden} name='Brayden Salmins' title='Managing Director' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
       </Row>
     </Column>
   );
@@ -35,8 +35,12 @@ export default function Pioneers() {
 
 function PioneerInfo (props){
   const [show, setShow] = useState(false);
+  
 
   return (
+    <a style={{
+      textDecoration: 'none'
+    }} href={props.url}  rel="noopener noreferrer" target="_blank">
     <Card
     onMouseOver={() => setShow(true)}
     onMouseOut={() => setShow(false)}
@@ -58,6 +62,7 @@ function PioneerInfo (props){
      {props.desc}
     </Text></div> : <div></div>}
   </Card>
+  </a>
   )
 }
 
@@ -75,7 +80,7 @@ const Card = styled.div`
   backdrop-filter: blur(0px) saturate(187%);
   box-shadow: 0 10px 20px 0 rgba(31, 38, 135, 0.9);
   -webkit-backdrop-filter: blur(0px) saturate(187%);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   border: 1px solid rgba(8, 24, 58, 0.8);
   &:hover{
