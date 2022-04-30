@@ -1,66 +1,33 @@
-import { Link } from "react-router-dom";
-import Logo from "../images/chain2Logo_sunset.png";
 import CoinModelLayout from "./Coin-Model-Layout";
-import { Column, Row, Text, Container } from "./ui/utils";
+import { Column, Row, Text } from "./ui/utils";
 import styled from "styled-components";
 import { HashLink } from "react-router-hash-link";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
-  // const [show, setShow] = useState(true);
-  // const [maxY, setMaxY] = useState(100);
-  // const controlNavbar = () => {
-  //   console.log("Y", window.scrollY);
 
-  //   if (window.scrollY > maxY) {
-  //     console.log("Greater");
-  //     setMaxY(window.scrollY);
-  //   }
-  //   console.log("maxY", maxY);
-  //   if (window.scrollY > 100) {
-  //     setShow(false);
-  //   }
-  //   // else if(window.scrollY < maxY-50){
-  //   //     setShow(true)
-  //   //     setMaxY(window.scrollY)
-  //   // }
-  //   else {
-  //     setShow(true);
-  //   }
-  // };
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", controlNavbar);
-  //   return () => {
-  //     window.removeEventListener("scroll", controlNavbar);
-  //   };
-  // }, []);
 
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  
   return (
     <Wrapper
     //  active={show}
     active={true}
      >
       <Column
+      style={{ transform: `translateY(${offsetY * 0.3}px)` }}
         maxWidth="100vw"
         background="transparent"
         justify="space-between"
         align="center"
       >
-        {/* <HashLink 
-        smooth
-        to="/#home" 
-        style={{
-             textDecoration: 'none'
-             }}>
-            <Row 
-            justify="" align="center"
-            paddingLeft='70px' paddingTop='30px'>
-            <img src={Logo} height="70px" width="auto" alt="logo"/>
-            <Container paddingTop='15px' paddingLeft='10px'>
-            </Container>
-            </Row>
-        </HashLink>   */}
         <div
           style={{
             paddingTop: "20px",
@@ -142,14 +109,14 @@ export default function Navbar() {
             </Text>
           </HashLink>
 
-          <HashLink style={{ textDecoration: "none" }} smooth to="/#about">
+          <HashLink style={{ textDecoration: "none" }} smooth to="/#pioneers">
             <Text
               color="black"
               fontSize="15px"
               fontWeight="bold"
               paddingRight="20px"
             >
-              TEAM
+              PIONEERS
             </Text>
           </HashLink>
         </Row>
@@ -168,12 +135,8 @@ const Wrapper = styled.div`
   gap: 0px;
   text-align: center;
   margin: 0 auto;
-<<<<<<< HEAD
   padding: 0px 0px 0px;
   transition-timing-function: ${(props) => (props.active ? "ease-in" : "")} ;
     transition:${(props) => (props.active ? "0.5s" : "")} ;
     display: ${(props) => (props.active ? "block" : "none")} ;
-=======
-  padding: 30px 0px 0px;
->>>>>>> 920381c55fb983623c2a16c653990c974c48d44f
 `;

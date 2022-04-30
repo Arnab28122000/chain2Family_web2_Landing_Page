@@ -28,13 +28,12 @@ export default function HeroBackground() {
       }}>
       <ParticlesContainer/>
       </div>
-      <Wave1 style={{ transform: `translateY(-${offsetY * 0.05}px)` }}/>
-      <Wave2 style={{ transform: `translateY(-${offsetY * 0.1}px)` }}/>
-      <Wave3 style={{ transform: `translateY(-${offsetY * 0.15}px)` }}/>
-      <Wave4 style={{ transform: `translateY(-${offsetY * 0.2}px)` }}/>
-      <Wave5 style={{ transform: `translateY(-${offsetY * 0.25}px)` }}/>
-      <Wave6 style={{ transform: `translateY(-${offsetY * 0.25}px)` }}/>
-      <Wave7/>
+      <Wave1 style={{ transform: `translateY(-${offsetY * 0.1}px)` }}/>
+      <Wave2 style={{ transform: `translateY(-${offsetY * 0.2}px)` }}/>
+      <Wave3 style={{ transform: `translateY(-${offsetY * 0.3}px)` }}/>
+      <Wave4 style={{ transform: `translateY(-${offsetY * 0.35}px)` }}/>
+      <Wave5 style={{ transform: `translateY(-${offsetY * 0.4}px)` }}/>
+      <Wave6 style={{ transform: `translateY(-${offsetY * 0.45}px)` }}/>
     </Wrapper>
   );
 }
@@ -42,7 +41,7 @@ const Wrapper = styled.div`
   position: absolute;
   width: 100%;
   height: 1000px;
-  background: linear-gradient(180deg, #08183A 4.33%, #4B3D60 18%, #FC9C54 50%, #ffffff 100.13%);
+  background: linear-gradient(180deg, #08183A 4.33%, #4B3D60 18%, #FC9C54 50%, #08183A 70.13%);
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
@@ -99,12 +98,3 @@ const Wave6 = styled(Layer)`
   height: 867px;
   background-image: url(${layer6});
 `;
-
-const Wave7 = styled(Layer)`
-  top: 870px;
-  width: 100vw;
-  height: 200px;
-  background-color: #08183A;
-  //background-image: linear-gradient(rgba(8, 24, 58, 0.95), #08183A);
-`;
-

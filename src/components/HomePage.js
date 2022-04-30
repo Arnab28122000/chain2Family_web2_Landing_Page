@@ -4,8 +4,7 @@ import styled from "styled-components";
 import Background from "./Background";
 import CoinScreen from "./Coin-Screen";
 import Navbar from "./Navbar";
-import POSScreen from "./POS-Screen";
-import TextSection from "./TextSection";
+import Pioneers from "./Poineers";
 import { Column } from "./ui/utils";
 
 
@@ -17,7 +16,7 @@ export default function HomePage() {
       <Navbar/>
     </Wrapper>
     <CoinScreen/>
-    <POSScreen/>
+    <Pioneers/>
     </Column>
   );
 }
