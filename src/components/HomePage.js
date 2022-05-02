@@ -3,10 +3,12 @@ import styled from "styled-components";
 
 import Background from "./Background";
 import CoinScreen from "./Coin-Screen";
+import FAQ from "./faq";
 import Footer from "./footer";
 import Navbar from "./Navbar";
 import Pioneers from "./Poineers";
 import { Column } from "./ui/utils";
+import WhiteListing from "./WhiteListing";
 
 
 export default function HomePage() {
@@ -17,6 +19,8 @@ export default function HomePage() {
       <Navbar/>
     </Wrapper>
     <CoinScreen/>
+    <WhiteListing/>
+    <FAQ/>
     <Pioneers/>
     <Footer/>
     </Column>

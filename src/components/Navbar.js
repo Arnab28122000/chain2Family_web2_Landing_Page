@@ -88,7 +88,7 @@ export default function Navbar() {
             </Text>
           </HashLink>
 
-          <HashLink style={{ textDecoration: "none" }} smooth to="/#about">
+          <HashLink style={{ textDecoration: "none" }} smooth to="/#whitelist">
             <Text
               color="black"
               fontSize="15px"
@@ -98,7 +98,7 @@ export default function Navbar() {
               WHITELIST
             </Text>
           </HashLink>
-          <HashLink style={{ textDecoration: "none" }} smooth to="/#about">
+          <HashLink style={{ textDecoration: "none" }} smooth to="/#faq">
             <Text
               color="black"
               fontSize="15px"

@@ -19,6 +19,7 @@ export default function Pioneers() {
       paddingTop="0px"
       backgroundColor="#08183A"
     >
+      <Text color="rgba(255,255,255,0.8)" fontWeight="bold" fontSize="40px" marginBottom='40px'>PIONEERS</Text>
       <Row maxWidth='80vw' width='100%' justify="space-between" marginLeft='190px' marginRight='190px'>
        <PioneerInfo url='https://www.linkedin.com/in/k3ytoshi/' image={keaton} name='Keaton McCune' title='CEO - CTO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
        <PioneerInfo url='https://www.linkedin.com/in/shawn-saucier/' image={shawn} name='Shawn Saucier' title='CFO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
@@ -100,5 +101,5 @@ const CardImage = styled.div`
   height: 150px;
   border-radius: 100%;
   width: 150px;
-  scale: 2;
+  scale: 1;
 `;
