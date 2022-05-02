@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Background from "./Background";
 import CoinScreen from "./Coin-Screen";
+import Footer from "./footer";
 import Navbar from "./Navbar";
 import Pioneers from "./Poineers";
 import { Column } from "./ui/utils";
@@ -17,6 +18,7 @@ export default function HomePage() {
     </Wrapper>
     <CoinScreen/>
     <Pioneers/>
+    <Footer/>
     </Column>
   );
 }
