@@ -12,6 +12,24 @@ code {
     monospace;
 }
 
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 25px;
+  height: 25px;
+  align-self: center;
+  border: 5px solid white;
+  border-top: 5px solid #0f0f88; 
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
 html::-webkit-scrollbar {
   width:0.5vw;
 }

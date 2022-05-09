@@ -1,5 +1,6 @@
 import { Canvas } from "@react-three/fiber"
-import { softShadows, OrbitControls } from "@react-three/drei";
+import { softShadows} from "@react-three/drei";
+// import { softShadows, OrbitControls } from "@react-three/drei";
 
 import Model from "./Coin-Model";
 

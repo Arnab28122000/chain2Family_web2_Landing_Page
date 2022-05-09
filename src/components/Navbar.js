@@ -66,7 +66,9 @@ export default function Navbar() {
             </Text>
           </HashLink>
 
-          <HashLink style={{ textDecoration: "none" }} smooth to="/#about">
+          <a style={{
+      textDecoration: 'none'
+    }} href='https://docs.google.com/document/d/1DWcH9zvDgD6RVFI9_HohWoYbbJQmMEmti5WNHae0O_I/edit?usp=sharing'  rel="noopener noreferrer" target="_blank">
             <Text
               color="black"
               fontSize="15px"
@@ -75,9 +77,9 @@ export default function Navbar() {
             >
               WHITEPAPER
             </Text>
-          </HashLink>
+          </a>
 
-          <HashLink style={{ textDecoration: "none" }} smooth to="/#about">
+          <HashLink style={{ textDecoration: "none" }} smooth to="/#roadmap">
             <Text
               color="black"
               fontSize="15px"

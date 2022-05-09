@@ -7,6 +7,7 @@ import FAQ from "./faq";
 import Footer from "./footer";
 import Navbar from "./Navbar";
 import Pioneers from "./Poineers";
+import Timeline from "./timeline";
 import { Column } from "./ui/utils";
 import WhiteListing from "./WhiteListing";
 
@@ -19,6 +20,7 @@ export default function HomePage() {
       <Navbar/>
     </Wrapper>
     <CoinScreen/>
+    <Timeline/>
     <WhiteListing/>
     <FAQ/>
     <Pioneers/>

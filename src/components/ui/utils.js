@@ -129,4 +129,15 @@ const Text = styled.div`
   }
 `;
 
-export { Row, Column, Container, Text };
+function LoadingSpinner() {
+  return (
+      <div style={{ width: '9vw', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+    <div className="spinner-container" >
+      <div className="loading-spinner">
+      </div>
+    </div>
+    </div>
+  );
+}
+
+export { Row, Column, Container, Text, LoadingSpinner };
