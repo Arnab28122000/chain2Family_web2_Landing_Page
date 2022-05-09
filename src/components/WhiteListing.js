@@ -25,7 +25,7 @@ export default function WhiteListing() {
   const [isSubmit, setIsSubmit] = useState(false);
   const [roles, setRole] = useState([]);
   const [interest, setInterest] = useState([]);
-  const [newsletter, setNewsletter] = useState(false);
+  const [newsletter, setNewsletter] = useState(true);
   const [openDialog, setOpenDialog] = useState(false);
   const [dialogMessage, setDialogMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
