@@ -1,12 +1,16 @@
-import { Column, Text, Row } from "./ui/utils";
+import { Column, Text, Row, useWindowSize } from "./ui/utils";
 import { useState } from "react";
 
 import { PlusIcon, MinusIcon } from "@radix-ui/react-icons";
 
 export default function FAQ(){
+    const size = useWindowSize();
     return (
         <Column backgroundColor="#08183A" justify='center' align='center' id='faq' paddingBottom='70px'>
-            <Text fontSize="40px" fontWeight="bold" color='rgba(255,255,255,0.8)' marginBottom='50px'>Frequently Asked Questions</Text>
+            <Text 
+            fontSize={size.width > 600 ?"40px" : "30px" }
+            textAlign='center'
+            fontWeight="bold" color='rgba(255,255,255,0.8)' marginBottom='50px'>Frequently Asked Questions</Text>
             <FAQTile question='What is Chain2Family?' answer='We aim to be a GLOBAL provider in BRANCHING the financial gaps between Traditional Finance, Centralized Finance and Decentralized Finance. C2FC powers an ecosystem of individual BLOCKCHAINS designed to scale and interoperate with each other including CENTRAL BANK DIGITAL CURRENCIES on a GLOBAL scale.'/>
             <FAQTile question='When is the public ICO🚀?' answer="The public ICO is on April 1st 2023 and last until April 5th 2023 i.e. Satoshi Nakamoto's Birthday"/>
             <FAQTile question='How to get whitelisted?' answer="Please navigate to the whitelisting section and fill out the required details. Our team will get in contact with you immediately."/>
@@ -18,17 +22,26 @@ export default function FAQ(){
 }
 
 function FAQTile(props){
+    const size = useWindowSize();
     const [isOpen, setOPen] = useState(false);
     return(
-        <Column width='60vw' backgroundColor='rgba(0,0,0,0.5)' borderRadius='5px' marginBottom='12px'>
+        <Column 
+        width={size.width > 1000 ?'60vw':'90vw' }
+        backgroundColor='rgba(0,0,0,0.5)' borderRadius='5px' marginBottom='12px'>
         <Row justify='space-between' margin='10px 20px'>
-            <Text fontWeight='bold' letterSpacing='1.5px' fontSize="30px" color='rgba(255,255,255,0.8)'>{props.question}</Text>
+            <Text fontWeight='bold' letterSpacing='1.5px' 
+            fontSize={size.width > 1000 ?'30px':'20px' }
+            color='rgba(255,255,255,0.8)'>{props.question}</Text>
             {isOpen ? 
             <MinusIcon color='white' width='40px' height='40px' onClick={() => setOPen(!isOpen)}/> 
             : 
             <PlusIcon color='white' width='40px' height='40px' onClick={() => setOPen(!isOpen)}/>}
         </Row>
-        {isOpen ? <Text lineHeight='30px' fontWeight='600' fontSize='20px' color='rgba(255,255,255, 0.8)' marginTop='10px' marginLeft='20px' marginRight='20px' marginBottom='20px'>{props.answer}</Text> : null}
+        {isOpen ? <Text 
+        lineHeight={size.width > 1000 ?'30px':'22px' }
+        fontWeight='600' 
+        fontSize={size.width > 1000 ?'20px':'18px' }
+        color='rgba(255,255,255, 0.8)' marginTop='10px' marginLeft='20px' marginRight='20px' marginBottom='20px'>{props.answer}</Text> : null}
         </Column>
     )
 }

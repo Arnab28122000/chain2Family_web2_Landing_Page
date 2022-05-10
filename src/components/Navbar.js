@@ -1,28 +1,28 @@
 import CoinModelLayout from "./Coin-Model-Layout";
-import { Column, Row, Text } from "./ui/utils";
+import { Column, Row, Text, useWindowSize} from "./ui/utils";
 import styled from "styled-components";
 import { HashLink } from "react-router-hash-link";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
-
+  
+  const size = useWindowSize();
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
-
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
+
   return (
     <Wrapper
-    //  active={show}
-    active={true}
-     >
+      //  active={show}
+      active={true}
+    >
       <Column
-      style={{ transform: `translateY(${offsetY * 0.3}px)` }}
+        style={{ transform: `translateY(${offsetY * 0.3}px)` }}
         maxWidth="100vw"
         background="transparent"
         justify="space-between"
@@ -38,18 +38,19 @@ export default function Navbar() {
         <Text
           color="black"
           fontWeight="bold"
-          fontSize="60px"
-          letterSpacing="13px"
+          fontSize={size.width> 800 ? "60px" : "31px"}
+          letterSpacing={size.width> 800 ? "13px" : "10px"}
         >
           CHAIN2FAMILY
         </Text>
+        { size.width > 700 ?
         <Row>
           <HashLink style={{ textDecoration: "none" }} smooth to="/#home">
             <Text
               color="black"
-              fontSize="15px"
+              fontSize={size.width> 800 ? "15px": "12px"}
               fontWeight="bold"
-              paddingRight="20px"
+              paddingRight={size.width> 800 ? "20px" : '10px'}
             >
               HOME
             </Text>
@@ -58,22 +59,27 @@ export default function Navbar() {
           <HashLink style={{ textDecoration: "none" }} smooth to="/#about">
             <Text
               color="black"
-              fontSize="15px"
+              fontSize={size.width> 800 ? "15px": "12px"}
               fontWeight="bold"
-              paddingRight="20px"
+              paddingRight={size.width> 800 ? "20px" : '10px'}
             >
               ABOUT
             </Text>
           </HashLink>
 
-          <a style={{
-      textDecoration: 'none'
-    }} href='https://docs.google.com/document/d/1DWcH9zvDgD6RVFI9_HohWoYbbJQmMEmti5WNHae0O_I/edit?usp=sharing'  rel="noopener noreferrer" target="_blank">
+          <a
+            style={{
+              textDecoration: "none",
+            }}
+            href="https://docs.google.com/document/d/1DWcH9zvDgD6RVFI9_HohWoYbbJQmMEmti5WNHae0O_I/edit?usp=sharing"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <Text
               color="black"
-              fontSize="15px"
+              fontSize={size.width> 800 ? "15px": "12px"}
               fontWeight="bold"
-              paddingRight="20px"
+              paddingRight={size.width> 800 ? "20px" : '10px'}
             >
               WHITEPAPER
             </Text>
@@ -82,9 +88,9 @@ export default function Navbar() {
           <HashLink style={{ textDecoration: "none" }} smooth to="/#roadmap">
             <Text
               color="black"
-              fontSize="15px"
+              fontSize={size.width> 800 ? "15px": "12px"}
               fontWeight="bold"
-              paddingRight="20px"
+              paddingRight={size.width> 800 ? "20px" : '10px'}
             >
               ROADMAP
             </Text>
@@ -93,9 +99,9 @@ export default function Navbar() {
           <HashLink style={{ textDecoration: "none" }} smooth to="/#whitelist">
             <Text
               color="black"
-              fontSize="15px"
+              fontSize={size.width> 800 ? "15px": "12px"}
               fontWeight="bold"
-              paddingRight="20px"
+              paddingRight={size.width> 800 ? "20px" : '10px'}
             >
               WHITELIST
             </Text>
@@ -103,9 +109,9 @@ export default function Navbar() {
           <HashLink style={{ textDecoration: "none" }} smooth to="/#faq">
             <Text
               color="black"
-              fontSize="15px"
+              fontSize={size.width> 800 ? "15px": "12px"}
               fontWeight="bold"
-              paddingRight="20px"
+              paddingRight={size.width> 800 ? "20px" : '10px'}
             >
               FAQ
             </Text>
@@ -114,14 +120,14 @@ export default function Navbar() {
           <HashLink style={{ textDecoration: "none" }} smooth to="/#pioneers">
             <Text
               color="black"
-              fontSize="15px"
+              fontSize={size.width> 800 ? "15px": "12px"}
               fontWeight="bold"
-              paddingRight="20px"
+              paddingRight={size.width> 800 ? "20px" : '10px'}
             >
               PIONEERS
             </Text>
           </HashLink>
-        </Row>
+        </Row> : null}
       </Column>
     </Wrapper>
   );
@@ -129,7 +135,7 @@ export default function Navbar() {
 
 const Wrapper = styled.div`
   position: sticky;
-  top:0;
+  top: 0;
   max-width: 100vw;
   width: 100%;
   max-height: 50px;
@@ -138,7 +144,7 @@ const Wrapper = styled.div`
   text-align: center;
   margin: 0 auto;
   padding: 0px 0px 0px;
-  transition-timing-function: ${(props) => (props.active ? "ease-in" : "")} ;
-    transition:${(props) => (props.active ? "0.5s" : "")} ;
-    display: ${(props) => (props.active ? "block" : "none")} ;
+  transition-timing-function: ${(props) => (props.active ? "ease-in" : "")};
+  transition: ${(props) => (props.active ? "0.5s" : "")};
+  display: ${(props) => (props.active ? "block" : "none")};
 `;

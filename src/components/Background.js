@@ -22,7 +22,7 @@ export default function HeroBackground() {
   }, []);
   
   return (
-    <Wrapper>
+    <Wrapper id='home'>
       <div style={{
         height: '500px'
       }}>

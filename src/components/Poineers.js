@@ -1,4 +1,4 @@
-import { Row, Column, Text } from "./ui/utils";
+import { Row, Column, Text, useWindowSize } from "./ui/utils";
 import { useState } from "react";
 import styled from "styled-components";
 import arnab from "../images/arnab.jpeg";
@@ -9,6 +9,7 @@ import amit from "../images/Amit.jpg";
 import brayden from "../images/Brayden.jpg";
 
 export default function Pioneers() {
+  const size = useWindowSize();
   
   return (
     <Column
@@ -19,22 +20,55 @@ export default function Pioneers() {
       paddingTop="0px"
       backgroundColor="#08183A"
     >
-      <Text color="rgba(255,255,255,0.8)" fontWeight="bold" fontSize="40px" marginBottom='40px'>PIONEERS</Text>
-      <Row maxWidth='80vw' width='100%' justify="space-between" marginLeft='190px' marginRight='190px'>
+      <Text color="rgba(255,255,255,0.8)" fontWeight="bold" 
+      fontSize={size.width > 600 ?"40px" : "30px" }
+      marginBottom='40px'>PIONEERS</Text>
+      {
+        size.width > 1200 ?
+        <>
+        <Row maxWidth='80vw' width='100%' justify="space-between" marginLeft='190px' marginRight='190px'>
        <PioneerInfo url='https://www.linkedin.com/in/k3ytoshi/' image={keaton} name='Keaton McCune' title='CEO - CTO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
        <PioneerInfo url='https://www.linkedin.com/in/shawn-saucier/' image={shawn} name='Shawn Saucier' title='CFO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
        <PioneerInfo url='https://www.linkedin.com/in/sebasgarciax/' image={sebastian} name='Sebastian Garcia' title='COO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
       </Row>
       <Row maxWidth='80vw' width='100%'  justify="space-between" marginLeft='190px' marginRight='190px'>
-       <PioneerInfo url='https://www.linkedin.com/in/arnab-bhattacharya-ab7055189/' image={arnab} name='Arnab Bhattacharya' title='Lead Developer' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
-       <PioneerInfo url='https://www.linkedin.com/in/dr-amit-vishwakarma-0a4b79bb/' image={amit} name='Dr. Amit' title='Lead Architect' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
-       <PioneerInfo url='https://www.linkedin.com/in/braydensalmins/' image={brayden} name='Brayden Salmins' title='Managing Director' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+      <PioneerInfo url='https://www.linkedin.com/in/arnab-bhattacharya-ab7055189/' image={arnab} name='Arnab Bhattacharya' title='Lead Developer' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+      <PioneerInfo url='https://www.linkedin.com/in/dr-amit-vishwakarma-0a4b79bb/' image={amit} name='Dr. Amit' title='Lead Architect' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+      <PioneerInfo url='https://www.linkedin.com/in/braydensalmins/' image={brayden} name='Brayden Salmins' title='Managing Director' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+     </Row>
+     </>
+      :
+      size.width > 800 && size.width < 1200 ?
+      <>
+      <Row maxWidth='80vw' width='100%' justify="space-between" marginLeft='190px' marginRight='190px'>
+       <PioneerInfo url='https://www.linkedin.com/in/k3ytoshi/' image={keaton} name='Keaton McCune' title='CEO - CTO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+       <PioneerInfo url='https://www.linkedin.com/in/shawn-saucier/' image={shawn} name='Shawn Saucier' title='CFO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
       </Row>
+      <Row maxWidth='80vw' width='100%' justify="space-between" marginLeft='190px' marginRight='190px'>
+      <PioneerInfo url='https://www.linkedin.com/in/sebasgarciax/' image={sebastian} name='Sebastian Garcia' title='COO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+      <PioneerInfo url='https://www.linkedin.com/in/arnab-bhattacharya-ab7055189/' image={arnab} name='Arnab Bhattacharya' title='Lead Developer' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+      </Row>
+      <Row maxWidth='80vw' width='100%' justify="space-between" marginLeft='190px' marginRight='190px'>
+      <PioneerInfo url='https://www.linkedin.com/in/dr-amit-vishwakarma-0a4b79bb/' image={amit} name='Dr. Amit' title='Lead Architect' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+      <PioneerInfo url='https://www.linkedin.com/in/braydensalmins/' image={brayden} name='Brayden Salmins' title='Managing Director' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+      </Row>
+      </>
+      :
+      <>
+       <PioneerInfo url='https://www.linkedin.com/in/k3ytoshi/' image={keaton} name='Keaton McCune' title='CEO - CTO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+       <PioneerInfo url='https://www.linkedin.com/in/shawn-saucier/' image={shawn} name='Shawn Saucier' title='CFO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+      <PioneerInfo url='https://www.linkedin.com/in/sebasgarciax/' image={sebastian} name='Sebastian Garcia' title='COO' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+      <PioneerInfo url='https://www.linkedin.com/in/arnab-bhattacharya-ab7055189/' image={arnab} name='Arnab Bhattacharya' title='Lead Developer' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+      <PioneerInfo url='https://www.linkedin.com/in/dr-amit-vishwakarma-0a4b79bb/' image={amit} name='Dr. Amit' title='Lead Architect' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+      <PioneerInfo url='https://www.linkedin.com/in/braydensalmins/' image={brayden} name='Brayden Salmins' title='Managing Director' desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+      </>
+      }
     </Column>
   );
 }
 
 function PioneerInfo (props){
+  const size = useWindowSize();
   const [show, setShow] = useState(false);
   
 
@@ -43,6 +77,7 @@ function PioneerInfo (props){
       textDecoration: 'none'
     }} href={props.url}  rel="noopener noreferrer" target="_blank">
     <Card
+      width={size.width}
     onMouseOver={() => setShow(true)}
     onMouseOut={() => setShow(false)}
   >
@@ -55,7 +90,7 @@ function PioneerInfo (props){
         {props.title}
       </Text>
     </Column>
-    {show ? 
+    {show && size.width > 750 ? 
     <div style={{
       minWidth:'270px'
     }}>
@@ -85,7 +120,7 @@ const Card = styled.div`
   border-radius: 12px;
   border: 1px solid rgba(8, 24, 58, 0.8);
   &:hover{
-    width: 500px;
+    width:  ${(props) => props.width > 800 ? '500px' : '250px'};
     cursor:pointer;
   }
 `;

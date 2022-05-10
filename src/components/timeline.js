@@ -1,7 +1,8 @@
-import { Column, Text } from "./ui/utils";
+import { Column, Text, useWindowSize } from "./ui/utils";
 import { Chrono } from "react-chrono";
 
 export default function Timeline() {
+  const size = useWindowSize();
   const items = [
     {
       title: "2022 Q2",
@@ -40,7 +41,9 @@ export default function Timeline() {
 
   return (
     <Column backgroundColor="#08183A" id='roadmap' paddingTop='0px' paddingBottom='70px'>
-      <Text fontSize="40px" textAlign="center" maxWidth='100vw' width='100%' fontWeight="bold" color='rgba(255,255,255,0.8)' marginBottom='50px'>Roadmap</Text>
+      <Text 
+      fontSize={size.width > 800 ?"40px": "30px"}
+      textAlign="center" maxWidth='100vw' width='100%' fontWeight="bold" color='rgba(255,255,255,0.8)' marginBottom='50px'>Roadmap</Text>
       <div style={{whiteSpace: "pre-wrap" }}>
       <Chrono
         items={items}
@@ -56,7 +59,7 @@ export default function Timeline() {
           titleColor: "rgba(255,255,255,1)",
           textColor: "rgba(255,255,255,0.5)",
         }}
-        mode="VERTICAL_ALTERNATING"
+        mode={size.width > 800 ? "VERTICAL_ALTERNATING" : "VERTICAL"}
         slideItemDuration={2000}
         scrollable={{ scrollbar: true }}
         showNavigation={false}

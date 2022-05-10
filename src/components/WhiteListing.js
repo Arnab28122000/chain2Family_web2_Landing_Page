@@ -1,4 +1,4 @@
-import { Column, Text, Row, LoadingSpinner } from "./ui/utils";
+import { Column, Text, Row, LoadingSpinner, useWindowSize } from "./ui/utils";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
 import * as React from 'react';
@@ -29,6 +29,8 @@ export default function WhiteListing() {
   const [openDialog, setOpenDialog] = useState(false);
   const [dialogMessage, setDialogMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
+  const size = useWindowSize();
 
 
   const handleClose = () => {
@@ -196,7 +198,7 @@ export default function WhiteListing() {
       paddingBottom="70px"
     >
       <Text
-        fontSize="40px"
+        fontSize={size.width > 800 ?"40px": "30px"}
         fontWeight="bold"
         color="rgba(255,255,255,0.8)"
         marginBottom="50px"
@@ -214,6 +216,7 @@ export default function WhiteListing() {
             Name :
           </Text>
           <Input
+          width={size.width}
             type="text"
             name="name"
             value={formValues.name}
@@ -230,6 +233,7 @@ export default function WhiteListing() {
             Email :
           </Text>
           <Input
+          width={size.width}
             type="text"
             name="email"
             value={formValues.email}
@@ -246,6 +250,7 @@ export default function WhiteListing() {
             Wallet address :
           </Text>
           <Input
+          width={size.width}
             type="text"
             name="wallet"
             value={formValues.wallet}
@@ -263,6 +268,7 @@ export default function WhiteListing() {
             Social :
           </Text>
           <Input
+            width={size.width}
             type="text"
             name="social"
             value={formValues.social}
@@ -271,7 +277,7 @@ export default function WhiteListing() {
           />
           <Text
             marginTop="30px"
-            fontSize="20px"
+            fontSize={size.width > 800 ?"20px": "18px"}
             fontWeight="bold"
             color="rgba(255,255,255,0.8)"
             marginLeft="10px"
@@ -290,7 +296,7 @@ export default function WhiteListing() {
           <ErrorMessage>{formErrors.roles}</ErrorMessage>
           <Text
             marginTop="30px"
-            fontSize="20px"
+            fontSize={size.width > 800 ?"20px": "18px"}
             fontWeight="bold"
             color="rgba(255,255,255,0.8)"
             marginLeft="10px"
@@ -308,7 +314,7 @@ export default function WhiteListing() {
           })}
           <Text
             marginTop="30px"
-            fontSize="20px"
+            fontSize={size.width > 800 ?"20px": "18px"}
             fontWeight="bold"
             color="rgba(255,255,255,0.8)"
             marginLeft="10px"
@@ -357,7 +363,7 @@ export default function WhiteListing() {
               No
             </Text>
           </Row>
-          <Button type="submit">
+          <Button width={size.width} type="submit">
             {
               isLoading ? <LoadingSpinner/> : "Submit"
             }
@@ -395,6 +401,7 @@ export default function WhiteListing() {
 
 function CheckBox(props) {
   const [checked, setChecked] = useState(false);
+  const size = useWindowSize();
   return (
     <Row
       align="center"
@@ -410,7 +417,7 @@ function CheckBox(props) {
         onChange={() => {}}
       />
       <Text
-        fontSize="18px"
+        fontSize={size.width > 800 ?"18px": "16px"}
         fontWeight="bold"
         color="rgba(255,255,255,0.8)"
         marginLeft="10px"
@@ -441,7 +448,7 @@ const InputCheckbox = styled.input`
 const Input = styled.input`
   height: 50px;
   margin: 10px 10px;
-  width: 40vw;
+  width:  ${(props) => props.width >1200 ? "40vw" : '90vw'};
   border: none;
   outline: none;
   border-radius: 5px;
@@ -457,7 +464,7 @@ const Input = styled.input`
 
 const Button = styled.button`
   height: 50px;
-  width: 10vw;
+  width:  ${(props) => props.width >1200 ? "10vw" : '200px'};
   align-self: center;
   align-items: center;
   font-size: 20px;
@@ -481,4 +488,5 @@ const ErrorMessage = styled.p`
   color: rgba(255, 0, 0, 0.8);
   font-weight: 600;
   font-size: 17px;
+  margin-left: 10px;
 `;
