@@ -20,6 +20,7 @@ export default function WhiteListing() {
     social: "",
     newLetters: true,
   };
+  
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
