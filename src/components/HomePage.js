@@ -9,7 +9,7 @@ import Footer from "./footer";
 import Navbar from "./Navbar";
 import Pioneers from "./Poineers";
 import Timeline from "./timeline";
-import { Column, Container, useWindowSize, Text } from "./ui/utils";
+import { Column, Container, useWindowSize, Text, Row } from "./ui/utils";
 import WhiteListing from "./WhiteListing";
 import { slide as Menu } from 'react-burger-menu'
 
@@ -54,31 +54,53 @@ export default function HomePage() {
           />
         </Column>
       ) : null}
+      <Container backgroundColor="white">
        <Menu style={{
          backgroundColor: 'rgba(255,255,255,1)'
-       }} width='60vw' isOpen={open}>
+       }} width='50vw' isOpen={open} 
+       
+       >
        <HashLink style={{ textDecoration: "none" }} smooth to="/#home">
+         <Row paddingTop='5px' align='center' justify='center' width='100%'>
             <Text
-              color="black"
-              fontSize="15px"
+              color="white"
+              fontSize="20px"
+              textAlign="center"
               fontWeight="bold"
               paddingRight="20px"
+              paddingTop="10px"
+              paddingBottom="10px"
+              backgroundColor="#08183A" 
+              width='100%'
+              borderRadius="10px"
             >
               HOME
             </Text>
+            </Row>
           </HashLink>
-
+          
+          
           <HashLink style={{ textDecoration: "none" }} smooth to="/#about">
+          <Row paddingTop='5px' align='center' justify='center' width='100%'>
             <Text
-              color="black"
-              fontSize="15px"
-              fontWeight="bold"
-              paddingRight="20px"
+             color="white"
+             fontSize="20px"
+             textAlign="center"
+             fontWeight="bold"
+             paddingRight="20px"
+             paddingTop="10px"
+             paddingBottom="10px"
+             backgroundColor="#08183A" 
+             width='100%'
+             borderRadius="10px"
             >
               ABOUT
             </Text>
+            </Row>
           </HashLink>
+          
 
+          
           <a
             style={{
               textDecoration: "none",
@@ -87,59 +109,108 @@ export default function HomePage() {
             rel="noopener noreferrer"
             target="_blank"
           >
+            <Row paddingTop='5px' align='center' justify='center' width='100%'>
             <Text
-              color="black"
-              fontSize="15px"
-              fontWeight="bold"
-              paddingRight="20px"
+             color="white"
+             fontSize="20px"
+             textAlign="center"
+             fontWeight="bold"
+             paddingRight="20px"
+             paddingTop="10px"
+             paddingBottom="10px"
+             backgroundColor="#08183A" 
+             width='100%'
+             borderRadius="10px"
             >
               WHITEPAPER
             </Text>
+            </Row>
           </a>
+          
 
+          
           <HashLink style={{ textDecoration: "none" }} smooth to="/#roadmap">
+          <Row paddingTop='5px' align='center' justify='center' width='100%'>
             <Text
-              color="black"
-              fontSize="15px"
-              fontWeight="bold"
-              paddingRight="20px"
+             color="white"
+             fontSize="20px"
+             textAlign="center"
+             fontWeight="bold"
+             paddingRight="20px"
+             paddingTop="10px"
+             paddingBottom="10px"
+             backgroundColor="#08183A" 
+             width='100%'
+             borderRadius="10px"
             >
               ROADMAP
             </Text>
+            </Row>
           </HashLink>
-
+          
+          
           <HashLink style={{ textDecoration: "none" }} smooth to="/#whitelist">
+          <Row paddingTop='5px' align='center' justify='center' width='100%'>
             <Text
-              color="black"
-              fontSize="15px"
-              fontWeight="bold"
-              paddingRight="20px"
+             color="white"
+             fontSize="20px"
+             textAlign="center"
+             fontWeight="bold"
+             paddingRight="20px"
+             paddingTop="10px"
+             paddingBottom="10px"
+             backgroundColor="#08183A" 
+             width='100%'
+             borderRadius="10px"
             >
               WHITELIST
             </Text>
+            </Row>
           </HashLink>
+          
+          
           <HashLink style={{ textDecoration: "none" }} smooth to="/#faq">
+          <Row paddingTop='5px' align='center' justify='center' width='100%'>
             <Text
-              color="black"
-              fontSize="15px"
-              fontWeight="bold"
-              paddingRight="20px"
+             color="white"
+             fontSize="20px"
+             textAlign="center"
+             fontWeight="bold"
+             paddingRight="20px"
+             paddingTop="10px"
+             paddingBottom="10px"
+             backgroundColor="#08183A" 
+             width='100%'
+             borderRadius="10px"
             >
               FAQ
             </Text>
+            </Row>
           </HashLink>
+          
 
+          
           <HashLink style={{ textDecoration: "none" }} smooth to="/#pioneers">
+          <Row paddingTop='5px' align='center' justify='center' width='100%'>
             <Text
-              color="black"
-              fontSize="15px"
-              fontWeight="bold"
-              paddingRight="20px"
+             color="white"
+             fontSize="20px"
+             textAlign="center"
+             fontWeight="bold"
+             paddingRight="20px"
+             paddingTop="10px"
+             paddingBottom="10px"
+             backgroundColor="#08183A" 
+             width='100%'
+             borderRadius="10px"
             >
               PIONEERS
             </Text>
+            </Row>
           </HashLink>
+          
       </Menu>
+      </Container>
       <CoinScreen />
       <Timeline />
       <WhiteListing />

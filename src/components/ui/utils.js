@@ -97,6 +97,8 @@ const Text = styled.div`
   z-index: ${(props) => props.zIndex};
   display: flex;
   flex-direction: column;
+  background-color: ${(props) => props.backgroundColor};
+  border-radius: ${(props) => props.borderRadius};
   font-size: ${(props) => props.fontSize};
   font-weight: ${(props) => props.fontWeight};
   font-family: ${(props) => props.fontFamily};

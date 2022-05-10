@@ -3,7 +3,9 @@ import { Row, Text, useWindowSize } from "./ui/utils";
 export default function CoinScreen() {
   const size = useWindowSize();
     return (
-      <Row maxWidth="100vw" height="400px" id="about"
+      <Row maxWidth="100vw" 
+      height={size> 1000 ?"400px": "500px" }
+      id="about"
     backgroundColor="#08183A" 
       // backgroundImage="linear-gradient(#1f1144,#1f1144, #57BEF8)" 
       justify="center" align="center" paddingTop="800px">
