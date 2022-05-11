@@ -55,7 +55,8 @@ export default function HomePage() {
         </Column>
       ) : null}
       <Container backgroundColor="white">
-       <Menu style={{
+      {size.width < 600 ?
+       <Menu noOverlay style={{
          backgroundColor: 'rgba(255,255,255,1)'
        }} width='50vw' isOpen={open} 
        
@@ -209,7 +210,7 @@ export default function HomePage() {
             </Row>
           </HashLink>
           
-      </Menu>
+      </Menu> : null}
       </Container>
       <CoinScreen />
       <Timeline />
