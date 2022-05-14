@@ -29,13 +29,13 @@ export default function Timeline() {
       title: "2022 Q4",
       cardTitle: "\n\t2022 Q4\n\n",
       cardSubtitle:
-        "\t- \n \t- C2FToken Early Beta Testing\n \t- Community events and meetups \n \t- C2FApplication Early Beta Testing\n \t- Whitelisting events and giveaways\n \t- ICO Fundraiser / Presale  ",
+        "\t- C2FToken Early Beta Testing\n \t- Community events and meetups \n \t- C2FApplication Early Beta Testing\n \t- Whitelisting events and giveaways\n \t- ICO Fundraiser / Presale  ",
     },
     {
       title: "2023 Q1",
       cardTitle: "\n\t2023 Q1\n\n",
       cardSubtitle:
-        "\t- We'll have a better idea based off the funding received in Q2. ",
+        "\t- Public ICO Launch 🚀",
     },
   ];
 
