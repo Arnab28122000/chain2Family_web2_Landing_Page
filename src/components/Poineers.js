@@ -30,12 +30,12 @@ export default function Pioneers() {
        <PioneerInfo url='https://www.linkedin.com/in/k3ytoshi/' image={keaton} name='Keaton McCune' title='CEO - CTO' desc="Keaton is a human rights activist and a blockchain innovator with an extensive analytical background in cybersecurity. They have passed several technical assestments including testing above average on the CompTIA CySA+, CISSP and CBSA / CBSP practice exams. 
       They're consistently learning, adapting in order to be an effective KEY leader in this space"/>
        <PioneerInfo url='https://www.linkedin.com/in/shawn-saucier/' image={shawn} name='Shawn Saucier' title='CFO' desc="Shawn has extensive experience providing financial management, market research and strategy within technology companies. They have a degree with Business Administration that reflects industry expertise in computer hardware, software, SaaS, digital media, HDTV, cellular and home networking industries. They continously find success in early-stage hi-tech start-ups."/>
-       <PioneerInfo url='https://www.linkedin.com/in/sebasgarciax/' image={sebastian} name='Sebastian Garcia' title='COO' desc=""/>
-      </Row>
+       <PioneerInfo url='https://www.linkedin.com/in/sebasgarciax/' image={sebastian} name='Sebastian Garcia' title='COO' desc="I'm a proud immigrant from Colombia looking to take advantage of my opportunity of living in the US. Here's the bottom line, I've worn many hats in my career, however, my main strengths include: Digital marketing, Brand Development, Operations and Project Management."/>
+      </Row>s
       <Row maxWidth='80vw' width='100%'  justify="space-between" marginLeft='190px' marginRight='190px'>
       <PioneerInfo url='https://www.linkedin.com/in/arnab-bhattacharya-ab7055189/' image={arnab} name='Arnab Bhattacharya' title='Lead Developer' desc="Arnab is a core developer having experience in developing scalable mobile and web applications for startups as well as big corporates. Having a bachelor's degree in Information Technology. Constantly learning, adapting, and innovating in the blockchain space by developing user-friendly scalable solutions."/>
       <PioneerInfo url='https://www.linkedin.com/in/dr-amit-vishwakarma-0a4b79bb/' image={amit} name='Dr. Amit' title='Lead Architect' desc="Dr. Amit is a creative professional with excellence in overall innovative thinking. They have worked on various blockchain platforms in the past and have 6 years of experience in developing multiple layer solutions with blockchain specific applications."/>
-      <PioneerInfo url='https://www.linkedin.com/in/braydensalmins/' image={brayden} name='Brayden Salmins' title='Managing Director' desc=""/>
+      <PioneerInfo url='https://www.linkedin.com/in/braydensalmins/' image={brayden} name='Brayden Salmins' title='Managing Director' desc="Finance Undergrad from Northern Arizona University. As a Finance BSBA with a UCERT in investments I have a passion and fascination with the world of finance, DeFi, and market analysis. With that passion, I yearn to help people become financially independent and confident."/>
      </Row>
      </>
       :
@@ -47,12 +47,12 @@ export default function Pioneers() {
        <PioneerInfo url='https://www.linkedin.com/in/shawn-saucier/' image={shawn} name='Shawn Saucier' title='CFO' desc="Shawn has extensive experience providing financial management, market research and strategy within technology companies. They have a degree with Business Administration that reflects industry expertise in computer hardware, software, SaaS, digital media, HDTV, cellular and home networking industries. They continously find success in early-stage hi-tech start-ups."/>
       </Row>
       <Row maxWidth='80vw' width='100%' justify="space-between" marginLeft='190px' marginRight='190px'>
-      <PioneerInfo url='https://www.linkedin.com/in/sebasgarciax/' image={sebastian} name='Sebastian Garcia' title='COO' desc=""/>
+      <PioneerInfo url='https://www.linkedin.com/in/sebasgarciax/' image={sebastian} name='Sebastian Garcia' title='COO' desc="I'm a proud immigrant from Colombia looking to take advantage of my opportunity of living in the US. Here's the bottom line, I've worn many hats in my career, however, my main strengths include: Digital marketing, Brand Development, Operations and Project Management."/>
       <PioneerInfo url='https://www.linkedin.com/in/arnab-bhattacharya-ab7055189/' image={arnab} name='Arnab Bhattacharya' title='Lead Developer' desc="Arnab is a core developer having experience in developing scalable mobile and web applications for startups as well as big corporates. Having a bachelor's degree in Information Technology. Constantly learning, adapting, and innovating in the blockchain space by developing user-friendly scalable solutions."/>
       </Row>
       <Row maxWidth='80vw' width='100%' justify="space-between" marginLeft='190px' marginRight='190px'>
       <PioneerInfo url='https://www.linkedin.com/in/dr-amit-vishwakarma-0a4b79bb/' image={amit} name='Dr. Amit' title='Lead Architect' desc="Dr. Amit is a creative professional with excellence in overall innovative thinking. They have worked on various blockchain platforms in the past and have 6 years of experience in developing multiple layer solutions with blockchain specific applications."/>
-      <PioneerInfo url='https://www.linkedin.com/in/braydensalmins/' image={brayden} name='Brayden Salmins' title='Managing Director' desc=""/>
+      <PioneerInfo url='https://www.linkedin.com/in/braydensalmins/' image={brayden} name='Brayden Salmins' title='Managing Director' desc="Finance Undergrad from Northern Arizona University. As a Finance BSBA with a UCERT in investments I have a passion and fascination with the world of finance, DeFi, and market analysis. With that passion, I yearn to help people become financially independent and confident."/>
       </Row>
       </>
       :
@@ -60,10 +60,10 @@ export default function Pioneers() {
        <PioneerInfo url='https://www.linkedin.com/in/k3ytoshi/' image={keaton} name='Keaton McCune' title='CEO - CTO' desc="Keaton is a human rights activist and a blockchain innovator with an extensive analytical background in cybersecurity. They have passed several technical assestments including testing above average on the CompTIA CySA+, CISSP and CBSA / CBSP practice exams. 
       They're consistently learning, adapting in order to be an effective KEY leader in this space"/>
        <PioneerInfo url='https://www.linkedin.com/in/shawn-saucier/' image={shawn} name='Shawn Saucier' title='CFO' desc="Shawn has extensive experience providing financial management, market research and strategy within technology companies. They have a degree with Business Administration that reflects industry expertise in computer hardware, software, SaaS, digital media, HDTV, cellular and home networking industries. They continously find success in early-stage hi-tech start-ups."/>
-      <PioneerInfo url='https://www.linkedin.com/in/sebasgarciax/' image={sebastian} name='Sebastian Garcia' title='COO' desc=""/>
+      <PioneerInfo url='https://www.linkedin.com/in/sebasgarciax/' image={sebastian} name='Sebastian Garcia' title='COO' desc="I'm a proud immigrant from Colombia looking to take advantage of my opportunity of living in the US. Here's the bottom line, I've worn many hats in my career, however, my main strengths include: Digital marketing, Brand Development, Operations and Project Management."/>
       <PioneerInfo url='https://www.linkedin.com/in/arnab-bhattacharya-ab7055189/' image={arnab} name='Arnab Bhattacharya' title='Lead Developer' desc="Arnab is a core developer having experience in developing scalable mobile and web applications for startups as well as big corporates. Having a bachelor's degree in Information Technology. Constantly learning, adapting, and innovating in the blockchain space by developing user-friendly scalable solutions."/>
       <PioneerInfo url='https://www.linkedin.com/in/dr-amit-vishwakarma-0a4b79bb/' image={amit} name='Dr. Amit' title='Lead Architect' desc="Dr. Amit is a creative professional with excellence in overall innovative thinking. They have worked on various blockchain platforms in the past and have 6 years of experience in developing multiple layer solutions with blockchain specific applications."/>
-      <PioneerInfo url='https://www.linkedin.com/in/braydensalmins/' image={brayden} name='Brayden Salmins' title='Managing Director' desc=""/>
+      <PioneerInfo url='https://www.linkedin.com/in/braydensalmins/' image={brayden} name='Brayden Salmins' title='Managing Director' desc="Finance Undergrad from Northern Arizona University. As a Finance BSBA with a UCERT in investments I have a passion and fascination with the world of finance, DeFi, and market analysis. With that passion, I yearn to help people become financially independent and confident."/>
       </>
       }
     </Column>
@@ -97,7 +97,7 @@ function PioneerInfo (props){
     <div style={{
       minWidth:'270px'
     }}>
-    <Text marginRight='30px' marginTop='50px' height="300px" align="center" justify="start" color="rgba(255, 255, 255,0.6)">
+    <Text marginRight='10px' marginTop='50px' height="300px" align="center" justify="start" color="rgba(255, 255, 255,0.6)">
      {props.desc}
     </Text></div> : <div></div>}
   </Card>
@@ -123,7 +123,7 @@ const Card = styled.div`
   border-radius: 12px;
   border: 1px solid rgba(8, 24, 58, 0.8);
   &:hover{
-    width:  ${(props) => props.width > 800 ? '500px' : '250px'};
+    width:  ${(props) => props.width > 800 ? '510px' : '250px'};
     cursor:pointer;
   }
 `;
