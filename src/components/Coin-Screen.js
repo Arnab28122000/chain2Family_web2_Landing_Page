@@ -17,7 +17,7 @@ export default function CoinScreen() {
             paddingRight={size.width > 800 ?"70px": "10px"}
             paddingLeft={size.width > 800 ?"70px": "10px"}
             fontWeight="bold">
-          We aim to be a GLOBAL provider in BRANCHING the financial gaps between Traditional Finance, Centralized Finance and Decentralized Finance. C2FC powers an ecosystem of individual BLOCKCHAINS designed to scale and interoperate with each other including CENTRAL BANK DIGITAL CURRENCIES on a GLOBAL scale.
+          C2F is the future of assest management that aims to be a GLOBAL provider in BRANCHING the financial gaps between Traditional Finance, Centralized Finance and Decentralized Finance. The platform will host a global DeFi market where the community can access multiple DeFi applications for personal or enterprise leveled solutions
           </Text>
       </Row>
     );
