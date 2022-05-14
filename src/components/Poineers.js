@@ -70,7 +70,6 @@ export default function Pioneers() {
   );
 }
 
-
 function PioneerInfo (props){
   const size = useWindowSize();
   const [show, setShow] = useState(false);
