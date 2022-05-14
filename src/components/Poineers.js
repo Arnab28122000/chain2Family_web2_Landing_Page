@@ -33,7 +33,7 @@ export default function Pioneers() {
        <PioneerInfo url='https://www.linkedin.com/in/sebasgarciax/' image={sebastian} name='Sebastian Garcia' title='COO' desc=""/>
       </Row>
       <Row maxWidth='80vw' width='100%'  justify="space-between" marginLeft='190px' marginRight='190px'>
-      <PioneerInfo url='https://www.linkedin.com/in/arnab-bhattacharya-ab7055189/' image={arnab} name='Arnab Bhattacharya' title='Lead Developer' desc=""/>
+      <PioneerInfo url='https://www.linkedin.com/in/arnab-bhattacharya-ab7055189/' image={arnab} name='Arnab Bhattacharya' title='Lead Developer' desc="Arnab is a core developer having experience in developing scalable mobile and web applications for startups as well as big corporates. Having a bachelor's degree in Information Technology. Constantly learning, adapting, and innovating in the blockchain space by developing user-friendly scalable solutions."/>
       <PioneerInfo url='https://www.linkedin.com/in/dr-amit-vishwakarma-0a4b79bb/' image={amit} name='Dr. Amit' title='Lead Architect' desc="Dr. Amit is a creative professional with excellence in overall innovative thinking. They have worked on various blockchain platforms in the past and have 6 years of experience in developing multiple layer solutions with blockchain specific applications."/>
       <PioneerInfo url='https://www.linkedin.com/in/braydensalmins/' image={brayden} name='Brayden Salmins' title='Managing Director' desc=""/>
      </Row>
@@ -48,7 +48,7 @@ export default function Pioneers() {
       </Row>
       <Row maxWidth='80vw' width='100%' justify="space-between" marginLeft='190px' marginRight='190px'>
       <PioneerInfo url='https://www.linkedin.com/in/sebasgarciax/' image={sebastian} name='Sebastian Garcia' title='COO' desc=""/>
-      <PioneerInfo url='https://www.linkedin.com/in/arnab-bhattacharya-ab7055189/' image={arnab} name='Arnab Bhattacharya' title='Lead Developer' desc=""/>
+      <PioneerInfo url='https://www.linkedin.com/in/arnab-bhattacharya-ab7055189/' image={arnab} name='Arnab Bhattacharya' title='Lead Developer' desc="Arnab is a core developer having experience in developing scalable mobile and web applications for startups as well as big corporates. Having a bachelor's degree in Information Technology. Constantly learning, adapting, and innovating in the blockchain space by developing user-friendly scalable solutions."/>
       </Row>
       <Row maxWidth='80vw' width='100%' justify="space-between" marginLeft='190px' marginRight='190px'>
       <PioneerInfo url='https://www.linkedin.com/in/dr-amit-vishwakarma-0a4b79bb/' image={amit} name='Dr. Amit' title='Lead Architect' desc="Dr. Amit is a creative professional with excellence in overall innovative thinking. They have worked on various blockchain platforms in the past and have 6 years of experience in developing multiple layer solutions with blockchain specific applications."/>
@@ -61,7 +61,7 @@ export default function Pioneers() {
       They're consistently learning, adapting in order to be an effective KEY leader in this space"/>
        <PioneerInfo url='https://www.linkedin.com/in/shawn-saucier/' image={shawn} name='Shawn Saucier' title='CFO' desc="Shawn has extensive experience providing financial management, market research and strategy within technology companies. They have a degree with Business Administration that reflects industry expertise in computer hardware, software, SaaS, digital media, HDTV, cellular and home networking industries. They continously find success in early-stage hi-tech start-ups."/>
       <PioneerInfo url='https://www.linkedin.com/in/sebasgarciax/' image={sebastian} name='Sebastian Garcia' title='COO' desc=""/>
-      <PioneerInfo url='https://www.linkedin.com/in/arnab-bhattacharya-ab7055189/' image={arnab} name='Arnab Bhattacharya' title='Lead Developer' desc=""/>
+      <PioneerInfo url='https://www.linkedin.com/in/arnab-bhattacharya-ab7055189/' image={arnab} name='Arnab Bhattacharya' title='Lead Developer' desc="Arnab is a core developer having experience in developing scalable mobile and web applications for startups as well as big corporates. Having a bachelor's degree in Information Technology. Constantly learning, adapting, and innovating in the blockchain space by developing user-friendly scalable solutions."/>
       <PioneerInfo url='https://www.linkedin.com/in/dr-amit-vishwakarma-0a4b79bb/' image={amit} name='Dr. Amit' title='Lead Architect' desc="Dr. Amit is a creative professional with excellence in overall innovative thinking. They have worked on various blockchain platforms in the past and have 6 years of experience in developing multiple layer solutions with blockchain specific applications."/>
       <PioneerInfo url='https://www.linkedin.com/in/braydensalmins/' image={brayden} name='Brayden Salmins' title='Managing Director' desc=""/>
       </>
