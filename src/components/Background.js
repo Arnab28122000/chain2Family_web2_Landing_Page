@@ -41,7 +41,7 @@ const Wrapper = styled.div`
   position: absolute;
   width: 100%;
   height: 1000px;
-  background: linear-gradient(180deg, #08183A 4.33%, #4B3D60 18%, #FC9C54 50%, #08183A 70.13%);
+  background: linear-gradient(180deg, #08183A 4.33%, #4B3D60 18%, #FC9C54 60%, #08183A 70.13%);
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
@@ -63,14 +63,14 @@ const Layer = styled.div`
 
 const Wave1 = styled(Layer)`
 
-  top: 240px;
+  top: 260px;
   height: 446px;
   background-image: url(${mountain1});
 `;
 
 const Wave2 = styled(Layer)`
 
-  top: 310px;
+  top: 340px;
   height: 446px;
   background-image: url(${mountain2});
 `;
@@ -82,7 +82,7 @@ const Wave3 = styled(Layer)`
 `;
 
 const Wave4 = styled(Layer)`
-  top: 450px;
+  top: 500px;
   height: 408px;
   background-image: url(${layer4});
 `;

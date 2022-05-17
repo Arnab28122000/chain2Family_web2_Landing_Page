@@ -9,7 +9,7 @@ export default function Timeline() {
       cardTitle: "\n\t2022 Q2\n\n",
     //   url: "http://www.history.com",
       cardSubtitle:
-        "\t- WhitepaperV1\n \t- Startup with Chainlink\n \t- Ignite Accelerator Program\n \t- Team / Advisor Onboarding\n \t- Secured Additional Seed Funding ",
+        "\t- WhitepaperV1 📃\n \t- Early Whitelisting ✍\n \t- Startup with Chainlink 🔗\n \t- Ignite Accelerator Program 🔥\n \t- First Round of Funding Secured💰\n \t- Onboarding of KEY Team Members 🔑",
       // cardDetailedText:
       //   "Men of the British Expeditionary Force (BEF) wade out to..",
     //   media: {
@@ -23,19 +23,24 @@ export default function Timeline() {
       title: "2022 Q3",
       cardTitle: "\n\t2022 Q3\n\n",
       cardSubtitle:
-        "\t- Legal Structuring\n \t- Grant Acceptances \n \t- Community Growth\n \t- Investor Whitelisting\n \t- Strategic Partnerships\n \t- C2FCoin Early Beta Testing ",
+        "\t- HomeTree Beta 🌳\n \t- ChainBranch Beta 🌿\n \t- Strategic Partnerships 🤝 \n \t- Community Development 👥 \n \t- 1st Fundraising Event Announced 📢 \n \t- Asset Tokenization BranchApp Beta 🈸 ",
     },
     {
       title: "2022 Q4",
       cardTitle: "\n\t2022 Q4\n\n",
       cardSubtitle:
-        "\t- C2FToken Early Beta Testing\n \t- Community events and meetups \n \t- C2FApplication Early Beta Testing\n \t- Whitelisting events and giveaways\n \t- ICO Fundraiser / Presale  ",
+        "\t- HEXTree Beta🔁\n \t- LiquidityTree Beta 💧\n \t- BranchMarket Beta 🛒\n \t- Desktop-Mobile Wallet Beta📱\n \t- 1st Allocation of Fundraiser Event 💸\n \t- 2nd Fundraising Event Announced 📢",
     },
     {
       title: "2023 Q1",
       cardTitle: "\n\t2023 Q1\n\n",
       cardSubtitle:
-        "\t- Public ICO Launch 🚀",
+        "\t- Public ICO Begins 🚀\n \t- C2F🌎Network Testnet\n \t- Bug Bounty Program 🐛 \n \t- H#SHira Security Auditing 🔐\n \t- 2nd Allocation of Fundraised Event 💸\n \t- Community BranchApp Voting Begins ✅",
+    },
+    {
+      title: "2023 Q2",
+      cardTitle: "\n\t2023 Q2\n\n",
+      cardSubtitle:"\t- Public ICO Ends 🏁\n \t- Allocation of Public ICO 💸\n \t- C2F🌎Network Mainnet Launch\n \t- Global Adoption of C2F🌐Network Begins"
     },
   ];
 
@@ -49,15 +54,15 @@ export default function Timeline() {
         items={items}
         theme={{
           // primary: "rgba(0,0,0,0.7)",
-          primary: "rgba(255,255,255,0.7)",
+          primary: "rgba(253,94,83,1)",
           // secondary: "rgba(255,255,255,0.7)",
-          secondary: "rgba(0,0,0,0.7)",
+          secondary: "rgba(255,255,255,1)",
           // cardBgColor: "rgba(255,255,255,0.9)",
-          cardBgColor: "rgba(0,0,0,0.2)",
+          cardBgColor: "rgba(255,255,255,1)",
           // cardForeColor: "rgba(0,0,0,0.8)",
-          cardForeColor: "rgba(255,255,255,0.8)",
-          titleColor: "rgba(255,255,255,1)",
-          textColor: "rgba(255,255,255,0.5)",
+          cardForeColor: "rgba(0,0,0,1)",
+          titleColor: "rgba(253,94,83,1)",
+          textColor: "rgba(255,255,255,1)",
         }}
         mode={size.width > 800 ? "VERTICAL_ALTERNATING" : "VERTICAL"}
         slideItemDuration={2000}
