@@ -204,7 +204,7 @@ export default function WhiteListing() {
         color="rgba(255,255,255,0.8)"
         marginBottom="50px"
       >
-        Get Whitelisted
+        Get Whitelisted For Early Access!
       </Text>
       <form onSubmit={handleSubmit}>
         <Column>
@@ -221,7 +221,7 @@ export default function WhiteListing() {
             type="text"
             name="name"
             value={formValues.name}
-            placeholder="Enter your name"
+            placeholder=" Enter Your Name"
             onChange={handleChange}
           />
           <ErrorMessage>{formErrors.name}</ErrorMessage>
@@ -238,7 +238,7 @@ export default function WhiteListing() {
             type="text"
             name="email"
             value={formValues.email}
-            placeholder="Enter your email"
+            placeholder=" Enter Your Email"
             onChange={handleChange}
           />
           <ErrorMessage>{formErrors.email}</ErrorMessage>
@@ -255,7 +255,7 @@ export default function WhiteListing() {
             type="text"
             name="wallet"
             value={formValues.wallet}
-            placeholder="Metamask wallet address"
+            placeholder=" Web3 Wallet Address"
             onChange={handleChange}
           />
           <ErrorMessage>{formErrors.wallet}</ErrorMessage>
@@ -273,7 +273,7 @@ export default function WhiteListing() {
             type="text"
             name="social"
             value={formValues.social}
-            placeholder="LinkedIn/Twitter/...  (Optional)"
+            placeholder=" LinkedIn,Twitter...(Optional)"
             onChange={handleChange}
           />
           <Text
@@ -283,7 +283,7 @@ export default function WhiteListing() {
             color="rgba(255,255,255,0.8)"
             marginLeft="10px"
           >
-            I'm interested in being a (select more than one)
+            I'm a (select more than one)
           </Text>
           {allRoles.map((role, index) => {
             return (
@@ -454,11 +454,11 @@ const Input = styled.input`
   outline: none;
   border-radius: 5px;
   font-size: 25px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba"rgba(253,94,83,1)";
   color: rgba(255, 255, 255, 0.7);
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(253,94,83,1);
     font-size: 20px;
   }
 `;
@@ -478,7 +478,7 @@ const Button = styled.button`
   box-shadow: 0 3px 6px 0 rgba(31, 38, 135, 0.9);
   background-color: rgba(0, 0, 0, 0.3);
   &:hover {
-    box-shadow: 0 5px 10px 0 rgba(31, 38, 135, 0.9);
+    box-shadow: 0 5px 10px 0 rgba(253,94,83,1);
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
     color: rgba(255, 255, 255, 0.8);

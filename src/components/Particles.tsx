@@ -2,6 +2,7 @@ import React from 'react';
 import Particles from "react-tsparticles";
 import type { Engine } from "tsparticles-engine";
 import { loadStarsPreset } from "tsparticles-preset-stars";
+import { Container } from './ui/utils';
 
 export class ParticlesContainer extends React.PureComponent {
   // this customizes the component tsParticles installation
@@ -96,6 +97,20 @@ export class ParticlesContainer extends React.PureComponent {
       },
     };
 
-    return <Particles height={'300px'} options={options} init={this.customInit} />;
+    return <Container maxHeight='500px' maxWidth='100vw' width='100%' height='100%'
+    style={{
+      position:"absolute",
+      width: '100%',
+      backgroundPosition: 'top center',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '100%',
+    }}
+    >
+
+      <Particles height={'300px'}  options={options} init={this.customInit} />
+      </Container>
+    
+    
+    
   }
 }

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Background from "./Background";
 import CoinScreen from "./Coin-Screen";
 import { HashLink } from "react-router-hash-link";
+import { Cross2Icon } from "@radix-ui/react-icons";
 import FAQ from "./faq";
 import Footer from "./footer";
 import Navbar from "./Navbar";
@@ -16,17 +17,19 @@ import { slide as Menu } from 'react-burger-menu'
 export default function HomePage() {
   const [open, setOpen] = useState(false);
   const size = useWindowSize();
+
   return (
     <Column>
       <Wrapper>
         <Background />
         <Navbar />
       </Wrapper>
-      {size.width < 600 ? (
+      {size.width < 600 && !open ? 
+      (
         <Column
           position="sticky"
           marginLeft="20px"
-          onClick={() => setOpen(!open)}
+          onClick={() => setOpen(true)}
           style={{
             top: 20,
           }}
@@ -54,6 +57,21 @@ export default function HomePage() {
           />
         </Column>
       ) : null}
+      {
+      size.width < 600 && open?
+      (
+        <Container height="50px" width="50px" color="#ffffff"  position="sticky" style={{
+          top: 10,
+        }} onClick={() => setOpen(false)}>
+      <Cross2Icon
+            style={{
+                marginLeft: '20px',
+            }} 
+            height='50px' width='50px' color="rgba(255,255,255,0.8)"/>
+      </Container>
+      )
+      : null
+      }
       <Container backgroundColor="white">
       {size.width < 600 ?
        <Menu noOverlay style={{

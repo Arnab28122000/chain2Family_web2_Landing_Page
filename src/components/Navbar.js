@@ -41,29 +41,29 @@ export default function Navbar() {
           fontSize={size.width> 800 ? "60px" : "31px"}
           letterSpacing={size.width> 800 ? "13px" : "10px"}
         >
-          CHAIN2FAMILY
+          THE C2F🌐NETWORK
         </Text>
         { size.width > 700 ?
         <Row>
           <HashLink style={{ textDecoration: "none" }} smooth to="/#home">
             <Text
-              color="black"
+              color="white"
               fontSize={size.width> 800 ? "15px": "12px"}
               fontWeight="bold"
               paddingRight={size.width> 800 ? "20px" : '10px'}
             >
-              HOME
+              🏠 HOME
             </Text>
           </HashLink>
 
           <HashLink style={{ textDecoration: "none" }} smooth to="/#about">
             <Text
-              color="black"
+              color="white"
               fontSize={size.width> 800 ? "15px": "12px"}
               fontWeight="bold"
               paddingRight={size.width> 800 ? "20px" : '10px'}
             >
-              ABOUT
+              🌐 ABOUT
             </Text>
           </HashLink>
 
@@ -71,60 +71,60 @@ export default function Navbar() {
             style={{
               textDecoration: "none",
             }}
-            href="https://docs.google.com/document/d/1DWcH9zvDgD6RVFI9_HohWoYbbJQmMEmti5WNHae0O_I/edit?usp=sharing"
+            href="https://k3ytoshi.gitbook.io/chain2family-network/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <Text
-              color="black"
+              color="white"
               fontSize={size.width> 800 ? "15px": "12px"}
               fontWeight="bold"
               paddingRight={size.width> 800 ? "20px" : '10px'}
             >
-              WHITEPAPER
+              📄 WHITEPAPER
             </Text>
           </a>
 
           <HashLink style={{ textDecoration: "none" }} smooth to="/#roadmap">
             <Text
-              color="black"
+              color="white"
               fontSize={size.width> 800 ? "15px": "12px"}
               fontWeight="bold"
               paddingRight={size.width> 800 ? "20px" : '10px'}
             >
-              ROADMAP
+              🚘 ROADMAP
             </Text>
           </HashLink>
 
           <HashLink style={{ textDecoration: "none" }} smooth to="/#whitelist">
             <Text
-              color="black"
+              color="white"
               fontSize={size.width> 800 ? "15px": "12px"}
               fontWeight="bold"
               paddingRight={size.width> 800 ? "20px" : '10px'}
             >
-              WHITELIST
+              ✍ WHITELIST
             </Text>
           </HashLink>
           <HashLink style={{ textDecoration: "none" }} smooth to="/#faq">
             <Text
-              color="black"
+              color="white"
               fontSize={size.width> 800 ? "15px": "12px"}
               fontWeight="bold"
               paddingRight={size.width> 800 ? "20px" : '10px'}
             >
-              FAQ
+             ❔ FAQ
             </Text>
           </HashLink>
 
           <HashLink style={{ textDecoration: "none" }} smooth to="/#pioneers">
             <Text
-              color="black"
+              color="white"
               fontSize={size.width> 800 ? "15px": "12px"}
               fontWeight="bold"
               paddingRight={size.width> 800 ? "20px" : '10px'}
             >
-              PIONEERS
+              🎩 PIONEERS
             </Text>
           </HashLink>
         </Row> : null}
