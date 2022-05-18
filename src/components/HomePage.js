@@ -75,7 +75,7 @@ export default function HomePage() {
               width='100%'
               borderRadius="10px"
             >
-              HOME
+              🏠 HOME
             </Text>
             </Row>
           </HashLink>
@@ -95,7 +95,7 @@ export default function HomePage() {
              width='100%'
              borderRadius="10px"
             >
-              ABOUT
+              🌐 ABOUT
             </Text>
             </Row>
           </HashLink>
@@ -106,7 +106,7 @@ export default function HomePage() {
             style={{
               textDecoration: "none",
             }}
-            href="https://docs.google.com/document/d/1DWcH9zvDgD6RVFI9_HohWoYbbJQmMEmti5WNHae0O_I/edit?usp=sharing"
+            href="https://k3ytoshi.gitbook.io/chain2family-network/"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -123,7 +123,7 @@ export default function HomePage() {
              width='100%'
              borderRadius="10px"
             >
-              WHITEPAPER
+             📄 WHITEPAPER
             </Text>
             </Row>
           </a>
@@ -144,7 +144,7 @@ export default function HomePage() {
              width='100%'
              borderRadius="10px"
             >
-              ROADMAP
+             🗺 ROADMAP
             </Text>
             </Row>
           </HashLink>
@@ -164,7 +164,7 @@ export default function HomePage() {
              width='100%'
              borderRadius="10px"
             >
-              WHITELIST
+             ✍ WHITELIST
             </Text>
             </Row>
           </HashLink>
@@ -184,7 +184,7 @@ export default function HomePage() {
              width='100%'
              borderRadius="10px"
             >
-              FAQ
+             ❔ FAQ
             </Text>
             </Row>
           </HashLink>
@@ -205,7 +205,7 @@ export default function HomePage() {
              width='100%'
              borderRadius="10px"
             >
-              PIONEERS
+            🎩 PIONEERS
             </Text>
             </Row>
           </HashLink>
