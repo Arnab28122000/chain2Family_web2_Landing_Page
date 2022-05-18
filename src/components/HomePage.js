@@ -74,7 +74,12 @@ export default function HomePage() {
       }
       <Container backgroundColor="white">
       {size.width < 600 ?
-       <Menu noOverlay style={{
+       <Menu 
+      
+       disableCloseOnEsc 
+       disableOverlayClick
+       disableAutoFocus
+       style={{
          backgroundColor: 'rgba(255,255,255,1)'
        }} width='50vw' isOpen={open} 
        
