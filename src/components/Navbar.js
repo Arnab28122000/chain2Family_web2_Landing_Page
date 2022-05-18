@@ -41,7 +41,7 @@ export default function Navbar() {
           fontSize={size.width> 800 ? "60px" : "31px"}
           letterSpacing={size.width> 800 ? "13px" : "10px"}
         >
-          THE C2F🌐NETWORK
+          C2F🌐NETWORK
         </Text>
         { size.width > 700 ?
         <Row>

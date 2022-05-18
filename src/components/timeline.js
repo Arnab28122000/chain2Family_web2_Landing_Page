@@ -9,7 +9,7 @@ export default function Timeline() {
       cardTitle: "\n\t2022 Q2\n\n",
     //   url: "http://www.history.com",
       cardSubtitle:
-        "\t- WhitepaperV1 📃\n \t- Early Whitelisting ✍\n \t- Startup with Chainlink 🔗\n \t- Ignite Accelerator Program 🔥\n \t- First Round of Funding Secured💰\n \t- Onboarding of KEY Team Members 🔑",
+        "\t- WhitepaperV1 📃\n \t- Early Whitelisting ✍\n \t- Startup with Chainlink 🔗\n \t- Ignite Startup Program 🔥\n \t- First Round of Funding 💰\n \t- Onboard KEY Team Members 🔑",
       // cardDetailedText:
       //   "Men of the British Expeditionary Force (BEF) wade out to..",
     //   media: {
@@ -23,24 +23,24 @@ export default function Timeline() {
       title: "2022 Q3",
       cardTitle: "\n\t2022 Q3\n\n",
       cardSubtitle:
-        "\t- HomeTree Beta 🌳\n \t- ChainBranch Beta 🌿\n \t- Strategic Partnerships 🤝 \n \t- Community Development 👥 \n \t- 1st Fundraising Event Announced 📢 \n \t- Asset Tokenization BranchApp Beta 🈸 ",
+        "\t- HomeTree Beta 🌳\n \t- ChainBranch Beta 🌿\n \t- Strategic Partnerships 🤝 \n \t- Community Development 👥 \n \t- 1st Presale Announced 📢 \n \t- Tokenized BranchApp Beta 🈸 ",
     },
     {
       title: "2022 Q4",
       cardTitle: "\n\t2022 Q4\n\n",
       cardSubtitle:
-        "\t- HEXTree Beta🔁\n \t- LiquidityTree Beta 💧\n \t- BranchMarket Beta 🛒\n \t- Desktop-Mobile Wallet Beta📱\n \t- 1st Allocation of Fundraiser Event 💸\n \t- 2nd Fundraising Event Announced 📢",
+        "\t- HEXTree Beta🔁\n \t- LiquidityTree Beta 💧\n \t- BranchMarket Beta 🛒\n \t- BranchApp Wallet Beta📱\n \t- Allocation of 1st Presale 💸\n \t- 2nd Presale Announced 📢",
     },
     {
       title: "2023 Q1",
       cardTitle: "\n\t2023 Q1\n\n",
       cardSubtitle:
-        "\t- Public ICO Begins 🚀\n \t- C2F🌎Network Testnet\n \t- Bug Bounty Program 🐛 \n \t- H#SHira Security Auditing 🔐\n \t- 2nd Allocation of Fundraised Event 💸\n \t- Community BranchApp Voting Begins ✅",
+        "\t- Public ICO Begins 🚀\n \t- C2F🌎Network Testnet\n \t- Bug Bounty Program 🐛 \n \t- H#SHira Security Auditing 🔐\n \t- Allocation of 2nd Presale 💸\n \t- BranchApp Voting Begins ✅",
     },
     {
       title: "2023 Q2",
       cardTitle: "\n\t2023 Q2\n\n",
-      cardSubtitle:"\t- Public ICO Ends 🏁\n \t- Allocation of Public ICO 💸\n \t- C2F🌎Network Mainnet Launch\n \t- Global Adoption of C2F🌐Network Begins"
+      cardSubtitle:"\t- Public ICO Ends 🏁\n \t- Allocation of Public ICO 💸\n \t- C2F🌎Network Mainnet\n \t- Global C2F🌐Network Begins"
     },
   ];
 
