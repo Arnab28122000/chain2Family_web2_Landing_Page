@@ -39,9 +39,9 @@ export default function Navbar() {
           color="black"
           fontWeight="bold"
           fontSize={size.width> 800 ? "60px" : "31px"}
-          letterSpacing={size.width> 800 ? "13px" : "10px"}
+          letterSpacing={size.width> 800 ? "10px" : "8px"}
         >
-          C2F🌐NETWORK
+          Life🌐DeFied
         </Text>
         { size.width > 700 ?
         <Row>

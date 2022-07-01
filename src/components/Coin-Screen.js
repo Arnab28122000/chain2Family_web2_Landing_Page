@@ -17,7 +17,7 @@ export default function CoinScreen() {
             paddingRight={size.width > 800 ?"70px": "10px"}
             paddingLeft={size.width > 800 ?"70px": "10px"}
             fontWeight="bold">
-          C2F is the future of assest management and tokenization!💎 The network aims to be a GL🌎BAL provider in 🌿BRANCHING the financial gaps between Traditional Finance, Centralized Finance and Decentralized Finance. The platform will host a global DeFi market where the community can access multiple DeFi applications for personal or consortium use cases
+          Life DeFied is the future of assest management and tokenization!💎 The network aims to be a GL🌎BAL provider in 🌿BRANCHING the financial gaps between Traditional Finance, Centralized Finance and Decentralized Finance. The platform will host a global DeFi market where the community can access multiple DeFi applications for personal or consortium use cases
           </Text>
       </Row>
     );

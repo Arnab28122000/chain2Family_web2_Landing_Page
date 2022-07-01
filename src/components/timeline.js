@@ -35,12 +35,12 @@ export default function Timeline() {
       title: "2023 Q1",
       cardTitle: "\n\t2023 Q1\n\n",
       cardSubtitle:
-        "\t- Public ICO Begins 🚀\n \t- C2F🌎Network Testnet\n \t- Bug Bounty Program 🐛 \n \t- H#SHira Security Auditing 🔐\n \t- Allocation of 2nd Presale 💸\n \t- BranchApp Voting Begins ✅",
+        "\t- Public ICO Begins 🚀\n \t- LifeDeFied🌎Network Testnet\n \t- Bug Bounty Program 🐛 \n \t- H#SHira Security Auditing 🔐\n \t- Allocation of 2nd Presale 💸\n \t- BranchApp Voting Begins ✅",
     },
     {
       title: "2023 Q2",
       cardTitle: "\n\t2023 Q2\n\n",
-      cardSubtitle:"\t- Public ICO Ends 🏁\n \t- Allocation of Public ICO 💸\n \t- C2F🌎Network Mainnet\n \t- Global C2F🌐Network Begins"
+      cardSubtitle:"\t- Public ICO Ends 🏁\n \t- Allocation of Public ICO 💸\n \t- LifeDeFied🌎Network Mainnet\n \t- Global LifeDefied🌐Network Begins"
     },
   ];
 

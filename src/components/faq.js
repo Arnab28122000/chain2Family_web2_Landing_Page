@@ -13,13 +13,13 @@ export default function FAQ(){
             height: '180px',
             mobileHeight: '270px'
         },{
-            question:'Who is the C2F🌐Network for❔',
-            answer:"The C2F Network is for everyone! Our decentralized platform is able to accomodate individual or a consortium of local businesses, family households, commercial banks, credit unions, niche communities, enterprise businesses, government organizations, non or for-profit organizations, university or college centers, and web2 users looking to transtion into the web3 space.",
+            question:'Who is the Life Defied for❔',
+            answer:"The LifeDeFied Network is for everyone! Our decentralized platform is able to accomodate individual or a consortium of local businesses, family households, commercial banks, credit unions, niche communities, enterprise businesses, government organizations, non or for-profit organizations, university or college centers, and web2 users looking to transtion into the web3 space.",
             height: '220px',
             mobileHeight: '350px'
         },{
-            question:'What is the C2F🌐Network for❔',
-            answer:"The Chain2Family Network is a global public blockchain meant to branch the financial gaps between Traditional Finance (TradFi), Centralized Finance (CeFi), Decentralized Finance (DeFi) by empowering the people through asset tokenization, connecting their own blockchains and accessing a DeFi marketplace of decentralized applications",
+            question:'What is the Life Defied for❔',
+            answer:"Life is a global public blockchain meant to branch the financial gaps between Traditional Finance (TradFi), Centralized Finance (CeFi), Decentralized Finance (DeFi) by empowering the people through asset tokenization, connecting their own blockchains and accessing a DeFi marketplace of decentralized applications",
             height: '220px',
             mobileHeight: '330px'
         },{
@@ -29,11 +29,11 @@ export default function FAQ(){
             mobileHeight: '210px'
         },{
             question:'How does asset tokenization work❔💎', 
-            answer:"The C2F network provides a native desktop and mobile application that communicates back to the public layer of the network. The user then selects what type of physical and digital assets they would like to tokenize. After successful verification of ownership through our intergration with chainlinks DON (decentraliced oracle network), the user will receive an overview of their tokenized assets value. They will then be presented a final confirmation of asset transfer where they will SWAP their native C2FCoins to receive their tokenized assets in the form of C2FTokens, further uploading to their blockchain.",
+            answer:"The Life DeFied network provides a native desktop and mobile application that communicates back to the public layer of the network. The user then selects what type of physical and digital assets they would like to tokenize. After successful verification of ownership through our intergration with chainlinks DON (decentraliced oracle network), the user will receive an overview of their tokenized assets value. They will then be presented a final confirmation of asset transfer where they will SWAP their native Life Coins to receive their tokenized assets in the form of Life Tokens, further uploading to their blockchain.",
             height: '300px',
             mobileHeight: '510px'
         },{
-            question:'Why should I tokenize with the C2F🌐Network?🤔', 
+            question:'Why should I tokenize with the Life DeFied?🤔', 
             answer:"Why wouldn't you? We're pioneering the FUTURE of asset management! Our network allows the capability for the user to BRANCH out into their own blockchain ledgers where they'll have an extra layer of economic freedom and security that the current financial system fails to provide. Additionally our community members will have access to a complete DeFi Marketplace called the BranchMarket. This BranchMarket hosts addtional BranchApplications (dApps) providing a wide range of services and features",
             height: '280px',
             mobileHeight: '500px'

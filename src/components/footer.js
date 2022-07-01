@@ -10,7 +10,7 @@ export default function Footer(){
         <Row marginBottom="10px">
         <a style={{
       textDecoration: 'none'
-    }} href='https://www.linkedin.com/company/chain2family'  rel="noopener noreferrer" target="_blank">
+    }} href='https://www.linkedin.com/company/lifedefied'  rel="noopener noreferrer" target="_blank">
             <LinkedInLogoIcon 
             style={{
                 marginLeft: '10px',
@@ -20,7 +20,7 @@ export default function Footer(){
             </a>
             <a style={{
       textDecoration: 'none'
-    }} href='https://www.instagram.com/chain2family/'  rel="noopener noreferrer" target="_blank">
+    }} href='https://www.instagram.com/lifedefied/'  rel="noopener noreferrer" target="_blank">
             <InstagramLogoIcon  style={{
                 marginLeft: '10px',
                 marginRight: '10px'
@@ -36,7 +36,7 @@ export default function Footer(){
             </a>
             <a style={{
       textDecoration: 'none'
-    }} href='https://twitter.com/chain2family'  rel="noopener noreferrer" target="_blank">
+    }} href='https://twitter.com/LifeDeFied'  rel="noopener noreferrer" target="_blank">
             <TwitterLogoIcon  style={{
                 marginLeft: '10px',
                 marginRight: '10px'
@@ -51,7 +51,7 @@ export default function Footer(){
             }} height='30px' width='30px' color="rgba(255,255,255,0.8)"/>
             </a>
         </Row>
-        <Text color="rgba(255, 255, 255, 0.6)">© Chain2Family, 2022 |  mccunekeaton@gmail.com</Text>
+        <Text color="rgba(255, 255, 255, 0.6)">© LifeDeFied, 2022 |  mccunekeaton@gmail.com</Text>
         </Column>
     );
 }
