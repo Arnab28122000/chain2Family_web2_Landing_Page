@@ -192,7 +192,7 @@ export default function WhiteListing() {
   };
   return (
     <Column
-      backgroundColor="#08183A"
+      backgroundColor="#fff"
       justify="center"
       align="center"
       id="whitelist"
@@ -201,7 +201,7 @@ export default function WhiteListing() {
       <Text
         fontSize={size.width > 800 ?"40px": "30px"}
         fontWeight="bold"
-        color="rgba(255,255,255,0.8)"
+        color="rgba(0,0,0,1)"
         marginBottom="50px"
       >
         Get Whitelisted For Early Access!
@@ -211,7 +211,7 @@ export default function WhiteListing() {
           <Text
             fontSize="20px"
             fontWeight="bold"
-            color="rgba(255,255,255,0.8)"
+            color="rgba(0,0,0,1)"
             marginLeft="10px"
           >
             Name :
@@ -228,7 +228,7 @@ export default function WhiteListing() {
           <Text
             fontSize="20px"
             fontWeight="bold"
-            color="rgba(255,255,255,0.8)"
+            color="rgba(0,0,0,1)"
             marginLeft="10px"
           >
             Email :
@@ -245,7 +245,7 @@ export default function WhiteListing() {
           <Text
             fontSize="20px"
             fontWeight="bold"
-            color="rgba(255,255,255,0.8)"
+            color="rgba(0,0,0,1)"
             marginLeft="10px"
           >
             Wallet address :
@@ -263,7 +263,7 @@ export default function WhiteListing() {
             type="text"
             fontSize="20px"
             fontWeight="bold"
-            color="rgba(255,255,255,0.8)"
+            color="rgba(0,0,0,1)"
             marginLeft="10px"
           >
             Social :
@@ -280,7 +280,7 @@ export default function WhiteListing() {
             marginTop="30px"
             fontSize={size.width > 800 ?"20px": "18px"}
             fontWeight="bold"
-            color="rgba(255,255,255,0.8)"
+            color="rgba(0,0,0,1)"
             marginLeft="10px"
           >
             I'm a (select more than one)
@@ -299,7 +299,7 @@ export default function WhiteListing() {
             marginTop="30px"
             fontSize={size.width > 800 ?"20px": "18px"}
             fontWeight="bold"
-            color="rgba(255,255,255,0.8)"
+            color="rgba(0,0,0,1)"
             marginLeft="10px"
           >
             I'm interested in (select more than one)
@@ -317,7 +317,7 @@ export default function WhiteListing() {
             marginTop="30px"
             fontSize={size.width > 800 ?"20px": "18px"}
             fontWeight="bold"
-            color="rgba(255,255,255,0.8)"
+            color="rgba(0,0,0,1)"
             marginLeft="10px"
           >
             I would like to receive company newsletter updates
@@ -337,7 +337,7 @@ export default function WhiteListing() {
             <Text
               fontSize="18px"
               fontWeight="bold"
-              color="rgba(255,255,255,0.8)"
+              color="rgba(0,0,0,1)"
               marginLeft="10px"
             >
               Yes
@@ -358,7 +358,7 @@ export default function WhiteListing() {
             <Text
               fontSize="18px"
               fontWeight="bold"
-              color="rgba(255,255,255,0.8)"
+              color="rgba(0,0,0,1)"
               marginLeft="10px"
             >
               No
@@ -385,13 +385,13 @@ export default function WhiteListing() {
       >
         <DialogTitle 
         style={{
-          backgroundColor: "#08183A",
+          backgroundColor: "#31AD94",
         }}
         >
-          <Text color="rgba(255,255,255,0.8)" fontWeight="bold" fontSize="24px">{dialogMessage}</Text></DialogTitle>
+          <Text color="rgba(0,0,0,1)" fontWeight="bold" fontSize="24px">{dialogMessage}</Text></DialogTitle>
         <DialogActions 
         style={{
-          backgroundColor: "#08183A",
+          backgroundColor: "#31AD94",
         }}>
           <Button onClick={handleClose}><Text color='white'>OK</Text></Button>
         </DialogActions>
@@ -420,7 +420,7 @@ function CheckBox(props) {
       <Text
         fontSize={size.width > 800 ?"18px": "16px"}
         fontWeight="bold"
-        color="rgba(255,255,255,0.8)"
+        color="rgba(0,0,0,1)"
         marginLeft="10px"
       >
         {props.name}
@@ -437,11 +437,11 @@ const InputCheckbox = styled.input`
   outline: none;
   border-radius: 10px;
   font-size: 25px;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(49, 173, 148, 1);
+  color: rgba(36, 77, 135, 1);
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(36, 77, 135, 1);
     font-size: 20px;
   }
 `;
@@ -454,12 +454,13 @@ const Input = styled.input`
   outline: none;
   border-radius: 5px;
   font-size: 25px;
-  background-color: rgba"rgba(253,94,83,1)";
-  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(41, 116, 143, 1);
+  color: rgba(239, 239, 239, 1);
 
   &::placeholder {
-    color: rgba(253,94,83,1);
-    font-size: 20px;
+    color: rgba(49, 173, 148, 1);
+    font-size: 25px;
+    font-weight: bold;
   }
 `;
 
@@ -472,16 +473,16 @@ const Button = styled.button`
   font-weight: bold;
   border: none;
   outline: none;
-  color: rgba(255, 255, 255, 0.7);
+  olor: rgba(36, 77, 135, 1);
   border-radius: 15px;
   margin-top: 20px;
-  box-shadow: 0 3px 6px 0 rgba(31, 38, 135, 0.9);
+  box-shadow: 0 3px 6px 0 rgba(36, 77, 135, 1);
   background-color: rgba(0, 0, 0, 0.3);
   &:hover {
-    box-shadow: 0 5px 10px 0 rgba(253,94,83,1);
+    box-shadow: 0 5px 10px 0 rgba(49, 173, 148, 1);
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(49, 173, 148, 1);
   }
 `;
 

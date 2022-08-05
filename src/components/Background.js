@@ -39,7 +39,7 @@ const Wrapper = styled.div`
   position: absolute;
   width: 100%;
   height: 1000px;
-  background: linear-gradient(180deg, #08183A 4.33%, #4B3D60 18%, #FC9C54 60%, #08183A 70.13%);
+  background: linear-gradient(180deg, #08183A 4.33%, #E6E6E6 60%, #FFFFFF 70.13%);
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;

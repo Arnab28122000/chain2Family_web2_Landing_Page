@@ -8,44 +8,38 @@ export default function FAQ(){
 
     const faqList = [
         {
-            question:'When is the public ICO❔🚀',
-            answer:"The public ICO starts December 31st 2022 and will last until April 5th 2023 (Satoshi Nakamoto's Birthday). There will be two private fundraisers held prior to the Public ICO. Those who want to participate in the first early fundraisers can sign-up on the whitelisting form",
+            question:'When is the public ICO? (Initial Coin Offering) 🚀',
+            answer:"The public ICO is scheduled to start on December 31st 2022 and will last until April 5th 2023 (Satoshi Nakamoto's Birthday). There will be two early private fundraisers held prior to the Public ICO. Those who want to participate in the early fundraisers can sign-up on the whitelisting form",
             height: '180px',
-            mobileHeight: '270px'
         },{
-            question:'Who is the Life Defied for❔',
-            answer:"The LifeDeFied Network is for everyone! Our decentralized platform is able to accomodate individual or a consortium of local businesses, family households, commercial banks, credit unions, niche communities, enterprise businesses, government organizations, non or for-profit organizations, university or college centers, and web2 users looking to transtion into the web3 space.",
+            question:'Who is LifeDeFied for?',
+            answer:"The LifeDeFied platform is for everyone! Our decentralized banking solutions are meant to accomodate the individual or a consortium of local businesses, family households, commercial banks, credit unions, niche communities, enterprise businesses, government organizations, non-profit to for-profit organizations, universities, and web2 users looking to transtion into the web3 space.",
             height: '220px',
-            mobileHeight: '350px'
         },{
-            question:'What is the Life Defied for❔',
-            answer:"Life is a global public blockchain meant to branch the financial gaps between Traditional Finance (TradFi), Centralized Finance (CeFi), Decentralized Finance (DeFi) by empowering the people through asset tokenization, connecting their own blockchains and accessing a DeFi marketplace of decentralized applications",
+            question:'What is LifeDeFied for?',
+            answer:"The LifeDeFied platform is a global public blockchain meant to branch and connect the financial gaps between Traditional Finance (TradFi), Centralized Finance (CeFi), Decentralized Finance (DeFi) by empowering the people through asset tokenization, connecting their own blockchains and accessing a DeFi marketplace of decentralized applications",
             height: '220px',
-            mobileHeight: '330px'
         },{
-            question:'Where can I get whitelisted❔📃✍', 
-            answer:"Please navigate to the whitelisting form above and fill out the required details. You'll receive additional onboarding information through the email and information provided.",
+            question:'Where can I get whitelisted?📃✍', 
+            answer:"Please navigate to the whitelisting form above and fill out the required details. You'll receive additional onboarding information through the email and information provided",
             height: '160px',
-            mobileHeight: '210px'
         },{
-            question:'How does asset tokenization work❔💎', 
-            answer:"The Life DeFied network provides a native desktop and mobile application that communicates back to the public layer of the network. The user then selects what type of physical and digital assets they would like to tokenize. After successful verification of ownership through our intergration with chainlinks DON (decentraliced oracle network), the user will receive an overview of their tokenized assets value. They will then be presented a final confirmation of asset transfer where they will SWAP their native Life Coins to receive their tokenized assets in the form of Life Tokens, further uploading to their blockchain.",
+            question:'How does asset tokenization work?💎', 
+            answer:"The LifeDeFied platform will provide a native desktop and mobile application that communicates to the public layer of the network. The user then selects what type of assets they want to upload whether it be physical, digital or documentation. After successful verification of ownership through our intergration with chainlinks DON (decentraliced oracle network), the user will receive an overview of their tokenized smart contract. They will then be presented a final confirmation of their asset value and upload their stable tokens or information assets to their blockchain network.",
             height: '300px',
-            mobileHeight: '510px'
         },{
-            question:'Why should I tokenize with the Life DeFied?🤔', 
-            answer:"Why wouldn't you? We're pioneering the FUTURE of asset management! Our network allows the capability for the user to BRANCH out into their own blockchain ledgers where they'll have an extra layer of economic freedom and security that the current financial system fails to provide. Additionally our community members will have access to a complete DeFi Marketplace called the BranchMarket. This BranchMarket hosts addtional BranchApplications (dApps) providing a wide range of services and features",
+            question:'Why should I tokenize and bank with LifeDeFied?🤔', 
+            answer:"Why wouldn't you? We're the only DeFi banking platform that offers you complete sovereignty over your assets and personal information. Our network allows the capability for the user to BRANCH out into their own private blockchain ledgers where you have an extra layer of economic freedom and security that the current financial system fails to provide. Additionally you will have access to a complete DeFi Marketplace called the BranchMarket. This BranchMarket hosts addtional BranchApplications (dApps) providing a wide range of services and features",
             height: '280px',
-            mobileHeight: '500px'
         }
     ];
 
     return (
-        <Column backgroundColor="#08183A" justify='center' align='center' id='faq' paddingBottom='70px'>
+        <Column backgroundColor="#EFEFEF" justify='center' align='center' id='faq' paddingBottom='70px'>
             <Text 
             fontSize={size.width > 600 ?"40px" : "30px" }
             textAlign='center'
-            fontWeight="bold" color='rgba(255,255,255,0.8)' marginBottom='50px'>Frequently Asked Questions</Text>
+            fontWeight="bold" color='rgba(0,0,0)' marginBottom='50px'  marginTop='70px'>Frequently Asked Questions</Text>
             {
                 faqList.map((faq, index) => {
                     return (
@@ -93,7 +87,7 @@ function FAQTile(props){
         lineHeight={size.width > 1000 ?'30px':'22px' }
         fontWeight='600' 
         fontSize={size.width > 1000 ?'20px':'18px' }
-        color='rgba(253,94,83,1)' marginTop='10px' marginLeft='20px' marginRight='20px' marginBottom='20px'>{props.answer}</Text> : null}
+        color='rgba(49, 173, 148, 1)' marginTop='10px' marginLeft='20px' marginRight='20px' marginBottom='20px'>{props.answer}</Text> : null}
         </Column>
     )
 }

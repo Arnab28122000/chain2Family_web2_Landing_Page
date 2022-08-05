@@ -5,7 +5,7 @@ import { LinkedInLogoIcon, InstagramLogoIcon, DiscordLogoIcon, TwitterLogoIcon, 
 
 export default function Footer(){
     return(
-        <Column  backgroundColor="#08183A" justify="center" align="center" paddingBottom='10px'>
+        <Column  backgroundColor="#000" justify="center" align="center" paddingBottom='10px'>
         <Text fontSize="30px" color="rgba(255,255,255,0.8)" fontWeight="bold" marginTop='50px' marginBottom='20px'>Contact Us</Text>
         <Row marginBottom="10px">
         <a style={{

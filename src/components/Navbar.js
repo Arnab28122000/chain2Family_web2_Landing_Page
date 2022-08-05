@@ -124,7 +124,7 @@ export default function Navbar() {
               fontWeight="bold"
               paddingRight={size.width> 800 ? "20px" : '10px'}
             >
-              🎩 PIONEERS
+              ✨ TEAM
             </Text>
           </HashLink>
         </Row> : null}

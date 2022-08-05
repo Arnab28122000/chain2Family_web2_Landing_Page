@@ -87,14 +87,14 @@ export default function HomePage() {
        <HashLink style={{ textDecoration: "none" }} smooth to="/#home">
          <Row paddingTop='5px' align='center' justify='center' width='100%'>
             <Text
-              color="white"
+              color="black"
               fontSize="20px"
               textAlign="center"
               fontWeight="bold"
               paddingRight="20px"
               paddingTop="10px"
               paddingBottom="10px"
-              backgroundColor="#08183A" 
+              backgroundColor="#EFEFEF" 
               width='100%'
               borderRadius="10px"
             >
@@ -107,14 +107,14 @@ export default function HomePage() {
           <HashLink style={{ textDecoration: "none" }} smooth to="/#about">
           <Row paddingTop='5px' align='center' justify='center' width='100%'>
             <Text
-             color="white"
+             color="black"
              fontSize="20px"
              textAlign="center"
              fontWeight="bold"
              paddingRight="20px"
              paddingTop="10px"
              paddingBottom="10px"
-             backgroundColor="#08183A" 
+             backgroundColor="#EFEFEF" 
              width='100%'
              borderRadius="10px"
             >
@@ -135,14 +135,14 @@ export default function HomePage() {
           >
             <Row paddingTop='5px' align='center' justify='center' width='100%'>
             <Text
-             color="white"
+             color="black"
              fontSize="20px"
              textAlign="center"
              fontWeight="bold"
              paddingRight="20px"
              paddingTop="10px"
              paddingBottom="10px"
-             backgroundColor="#08183A" 
+             backgroundColor="#EFEFEF" 
              width='100%'
              borderRadius="10px"
             >
@@ -156,18 +156,18 @@ export default function HomePage() {
           <HashLink style={{ textDecoration: "none" }} smooth to="/#roadmap">
           <Row paddingTop='5px' align='center' justify='center' width='100%'>
             <Text
-             color="white"
+             color="black"
              fontSize="20px"
              textAlign="center"
              fontWeight="bold"
              paddingRight="20px"
              paddingTop="10px"
              paddingBottom="10px"
-             backgroundColor="#08183A" 
+             backgroundColor="#EFEFEF" 
              width='100%'
              borderRadius="10px"
             >
-             🗺 ROADMAP
+             🚘 ROADMAP
             </Text>
             </Row>
           </HashLink>
@@ -176,14 +176,14 @@ export default function HomePage() {
           <HashLink style={{ textDecoration: "none" }} smooth to="/#whitelist">
           <Row paddingTop='5px' align='center' justify='center' width='100%'>
             <Text
-             color="white"
+             color="black"
              fontSize="20px"
              textAlign="center"
              fontWeight="bold"
              paddingRight="20px"
              paddingTop="10px"
              paddingBottom="10px"
-             backgroundColor="#08183A" 
+             backgroundColor="#EFEFEF" 
              width='100%'
              borderRadius="10px"
             >
@@ -196,14 +196,14 @@ export default function HomePage() {
           <HashLink style={{ textDecoration: "none" }} smooth to="/#faq">
           <Row paddingTop='5px' align='center' justify='center' width='100%'>
             <Text
-             color="white"
+             color="black"
              fontSize="20px"
              textAlign="center"
              fontWeight="bold"
              paddingRight="20px"
              paddingTop="10px"
              paddingBottom="10px"
-             backgroundColor="#08183A" 
+             backgroundColor="#EFEFEF" 
              width='100%'
              borderRadius="10px"
             >
@@ -217,18 +217,18 @@ export default function HomePage() {
           <HashLink style={{ textDecoration: "none" }} smooth to="/#pioneers">
           <Row paddingTop='5px' align='center' justify='center' width='100%'>
             <Text
-             color="white"
+             color="black"
              fontSize="20px"
              textAlign="center"
              fontWeight="bold"
              paddingRight="20px"
              paddingTop="10px"
              paddingBottom="10px"
-             backgroundColor="#08183A" 
+             backgroundColor="#EFEFEF" 
              width='100%'
              borderRadius="10px"
             >
-            🎩 PIONEERS
+            ✨ TEAM
             </Text>
             </Row>
           </HashLink>
