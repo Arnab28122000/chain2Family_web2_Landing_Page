@@ -21,7 +21,7 @@ export default function Model({ position, color, speed, args , ...props }) {
   //Basic expand state
   const [expand, setExpand] = useState(false);
  
-  const { nodes, materials } = useGLTF('/chain2Family_sunset_logo.glb')
+  const { nodes, materials } = useGLTF('/chain2Final_blue_white.glb')
   return (
     <>
     <group>
