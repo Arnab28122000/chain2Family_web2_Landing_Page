@@ -38,16 +38,16 @@ export default function WhiteListing() {
     setOpenDialog(false);
   };
 
-  const allRoles = ["Advisor", "Partner", "Investor", "Member", "Contributer"];
+  const allRoles = ["Advisor", "Partner", "Investor", "Member", "Contributer", "Ambassador"];
   const allInterests = [
-    "Decentralized Identies",
-    "Tokenized Insurance Security",
-    "Tokenized Defi App MarketPlace",
-    "Tokenized Lending and Borrowing",
-    "Tokenized Cold Storage (offline) Staking",
-    "Individual and Consortium Community Staking",
-    "Operating and owning my own blockchain ledgers",
-    "Tokenizing my physical and digital assets/information",
+    "Decentralized identity and asset management",
+    "Cold storage security and eco-friendly validation",
+    "Asset Tokenization (Physical, Digital, Documentational)",
+    "Owning and operating my own private blockchain networks",
+    "Insurance security and protection with my tokenized assets",
+    "Providing my services and solutions on the public marketplace",
+    "Integrating and growing my business on the public marketplace",
+    "Beta-testing the platform, the wallet and key features as they're rolled out",
   ];
 
   function contains(array, val) {

@@ -21,7 +21,7 @@ export default function Timeline() {
       title: "2022 Q4",
       cardTitle: "\n\t2022 Q4\n\n",
       cardSubtitle:
-        "\t- HEXTree Beta\n \t- LiquidityTree Beta\n \t- BranchMarket Beta\n \t- LifeDeFied Native Wallet\n \t- Allocation of 1st Presale \n \t- 2nd Presale Announced",
+        "\t- HEXTree Beta\n \t- LiquidityTree Beta\n \t- BranchMarket Beta\n \t- LifeDeFied Utility Wallet\n \t- Allocation of 1st Presale \n \t- 2nd Presale Announced",
     },
     {
       title: "2023 Q1",

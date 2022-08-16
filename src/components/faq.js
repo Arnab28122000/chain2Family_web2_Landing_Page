@@ -13,11 +13,11 @@ export default function FAQ(){
             height: '180px',
         },{
             question:'Who is LifeDeFied for?',
-            answer:"The LifeDeFied platform is for everyone! Our decentralized banking solutions are meant to accomodate the individual or a consortium of local businesses, family households, commercial banks, credit unions, niche communities, enterprise businesses, government organizations, non-profit to for-profit organizations, universities, and web2 users looking to transtion into the web3 space.",
+            answer:"The LifeDeFied platform is for everyone! Our decentralized Web3 Services and DeFi banking solutions are meant to accomodate the individual or a consortium of local businesses, family households, commercial banks, credit unions, niche communities, enterprise businesses, government organizations, non-profit to for-profit organizations, universities, and web2 users looking to transtion into the web3 space.",
             height: '220px',
         },{
             question:'What is LifeDeFied for?',
-            answer:"The LifeDeFied platform is a global public blockchain meant to branch and connect the financial gaps between Traditional Finance (TradFi), Centralized Finance (CeFi), Decentralized Finance (DeFi) by empowering the people through asset tokenization, connecting their own blockchains and accessing a DeFi marketplace of decentralized applications",
+            answer:"The LifeDeFied platform is a global public blockchain meant to branch and connect the financial gaps between Traditional Finance (TradFi), Centralized Finance (CeFi), Decentralized Finance (DeFi) by empowering the people through asset tokenization, connecting their own private blockchain networks and accessing a DeFi marketplace of decentralized applications",
             height: '220px',
         },{
             question:'Where can I get whitelisted?📃✍', 

@@ -51,7 +51,7 @@ export default function Footer(){
             }} height='30px' width='30px' color="rgba(255,255,255,0.8)"/>
             </a>
         </Row>
-        <Text color="rgba(255, 255, 255, 0.6)">© LifeDeFied, 2022 |  mccunekeaton@gmail.com</Text>
+        <Text color="rgba(255, 255, 255, 0.6)">© LifeDeFied, 2022 </Text>
         </Column>
     );
 }
