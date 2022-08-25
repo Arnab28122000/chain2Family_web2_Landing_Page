@@ -8,7 +8,7 @@ export default function Timeline() {
       title: "PHASE ONE",
       cardTitle: "\n\tPHASE ONE BETA\n\n",
       cardSubtitle:
-        "\t- MetaSeedling Avatars 1 Season\n \t- Dynamic NFT Collection (Closed Beta)\n \t- Dynamic NFT Collection (Open Beta)\n \t- HomeTree Network (Public Blockchain Layer)\n \t- ChainBranch Networks (Private Blockchain Layer)\n \t- Inter Blockchain Communication and Routing",
+        "\t- MetaSeedling Avatars Season 1\n \t- Dynamic NFT Collection (Closed Beta)\n \t- Dynamic NFT Collection (Open Beta)\n \t- HomeTree Network (Public Blockchain Layer)\n \t- ChainBranch Networks (Private Blockchain Layer)\n \t- Inter Blockchain Communication and Routing",
 
     },
     {
