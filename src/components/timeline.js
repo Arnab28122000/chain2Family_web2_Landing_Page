@@ -5,34 +5,29 @@ export default function Timeline() {
   const size = useWindowSize();
   const items = [
     {
-      title: "2022 Q2",
-      cardTitle: "\n\t2022 Q2\n\n",
+      title: "PHASE ONE",
+      cardTitle: "\n\tPHASE ONE BETA\n\n",
       cardSubtitle:
-        "\t- WhitepaperV1\n \t- Early Whitelisting\n \t- Startup with Chainlink\n \t- Ignite Startup Program\n \t- First Round of Funding\n \t- Onboard KEY Team Members",
+        "\t- MetaSeedling Avatars 1 Season\n \t- Dynamic NFT Collection (Closed Beta)\n \t- Dynamic NFT Collection (Open Beta)\n \t- HomeTree Network (Public Blockchain Layer)\n \t- ChainBranch Networks (Private Blockchain Layer)\n \t- Inter Blockchain Communication and Routing",
 
     },
     {
-      title: "2022 Q3",
-      cardTitle: "\n\t2022 Q3\n\n",
+      title: "PHASE TWO",
+      cardTitle: "\n\tPHASE TWO BETA\n\n",
       cardSubtitle:
-        "\t- Public HomeTree Beta\n \t- Private ChainBranch Beta\n \t- Strategic Partnerships\n \t- Community Development\n \t- 1st Presale Announced\n \t- Tokenized BranchApp Beta",
+        "\t- LifeDeFied Utility Platform\n \t- LifeDeFied Utility Wallet (Hot + Cold Wallet)\n \t- DeFi Bank Account + Web3 Identity\n \t- HEXTree + LiquidityTree (DeFi, CeFi and TradFi)\n \t- Tokenization Portal (Physical, Digital and Documentational",
     },
     {
-      title: "2022 Q4",
-      cardTitle: "\n\t2022 Q4\n\n",
+      title: "PHASE THREE",
+      cardTitle: "\n\tPHASE THREE BETA\n\n",
       cardSubtitle:
-        "\t- HEXTree Beta\n \t- LiquidityTree Beta\n \t- BranchMarket Beta\n \t- LifeDeFied Utility Wallet\n \t- Allocation of 1st Presale \n \t- 2nd Presale Announced",
+        "\t- BranchMarket + BranchApps (Closed Beta)\n \t- BranchMarket + BranchApps (Open Beta)\n \t- LifeDeFied Web3 Services (LD3S Closed Beta)\n \t- LifeDeFied Web3 Services (LD3S Open Beta)\n \t- ChainBranch Utility Marketplace Intergrations", 
     },
     {
-      title: "2023 Q1",
-      cardTitle: "\n\t2023 Q1\n\n",
+      title: "PHASE FOUR",
+      cardTitle: "\n\tPHASE FOUR BETA\n\n",
       cardSubtitle:
-        "\t- Public ICO Begins\n \t- LifeDeFied Testnet\n \t- Bug Bounty Programs\n \t- In House Security Audits \n \t- Allocation of 2nd Presale\n \t- BranchApp Solutions Begin",
-    },
-    {
-      title: "2023 Q2",
-      cardTitle: "\n\t2023 Q2\n\n",
-      cardSubtitle:"\t- Public ICO Ends \n \t- Allocation of Public ICO \n \t- LifeDeFied Mainnet\n \t- Global DeFi Marketplace"
+        "\t- Cold Storage Services + Cold Data Center\n \t- Cold Storage Staking (Validation + Delegation)\n \t-  Eco Friendly Validation + Delegation\n \t- Carbon Neutral to Carbon Negative \n \t- ChainBranch Nested Blockchain Virtulization\n \t- Global DeFi Marketplace + Community Gamification",
     },
   ];
 
@@ -40,7 +35,7 @@ export default function Timeline() {
     <Column backgroundColor="#fff" id='roadmap' paddingTop='0px' paddingBottom='70px'>
       <Text 
       fontSize={size.width > 800 ?"40px": "30px"}
-      textAlign="center" maxWidth='100vw' width='100%' fontWeight="bold" color='rgba(0,0,0,1)' marginBottom='50px'> Roadmap (subject to change)</Text>
+      textAlign="center" maxWidth='100vw' width='100%' fontWeight="bold" color='rgba(0,0,0,1)' marginBottom='50px'> Roadmap to Mainnet</Text>
       <div style={{whiteSpace: "pre-wrap" }}>
       <Chrono
         items={items}
