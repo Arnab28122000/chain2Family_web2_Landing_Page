@@ -17,7 +17,7 @@ export default function CoinScreen() {
             paddingRight={size.width > 800 ?"70px": "10px"}
             paddingLeft={size.width > 800 ?"70px": "10px"}
             fontWeight="bold">
-          LifeDeFied is an all-in-one non-custodial tokenization platform and bridge that connects all three sectors of the financial market (TradFi, CeFi and DeFi). We provide the consumer, business or government their own private blockchain networks along with their own web3 wallet identities to make use of DeFi banking services, cold storage solutions and integrations on the public marketplace. 
+          LifeDeFied is an all-in-one non-custodial tokenization platform and bridge that connects all three sectors of the financial market (TradFi, CeFi and DeFi). We provide the consumer, business or government their own private blockchain networks along with their own web3 wallet identities to make use of LifeDeFied Web3 Services, DeFi banking services, cold storage solutions and custom integrations on the public layer of the marketplace. 
           </Text>
       </Row>
     );
